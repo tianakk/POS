@@ -9,13 +9,72 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_BillConcept;
+  private ConceptPresentation props_EmployeeConcept;
+  private ConceptPresentation props_InventoryConcept;
+  private ConceptPresentation props_InventoryItemConcept;
+  private ConceptPresentation props_MenuItemConcept;
+  private ConceptPresentation props_OrderConcept;
+  private ConceptPresentation props_OrderItemConcept;
   private ConceptPresentation props_RPOS;
+  private ConceptPresentation props_SalesConcept;
+  private ConceptPresentation props_TableConcept;
+  private ConceptPresentation props_TransactionConcept;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.BillConcept:
+        if (props_BillConcept == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("BillConcept");
+          props_BillConcept = cpb.create();
+        }
+        return props_BillConcept;
+      case LanguageConceptSwitch.EmployeeConcept:
+        if (props_EmployeeConcept == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("EmployeeConcept");
+          props_EmployeeConcept = cpb.create();
+        }
+        return props_EmployeeConcept;
+      case LanguageConceptSwitch.InventoryConcept:
+        if (props_InventoryConcept == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("InventoryConcept");
+          props_InventoryConcept = cpb.create();
+        }
+        return props_InventoryConcept;
+      case LanguageConceptSwitch.InventoryItemConcept:
+        if (props_InventoryItemConcept == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("InventoryItemConcept");
+          props_InventoryItemConcept = cpb.create();
+        }
+        return props_InventoryItemConcept;
+      case LanguageConceptSwitch.MenuItemConcept:
+        if (props_MenuItemConcept == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("MenuItemConcept");
+          props_MenuItemConcept = cpb.create();
+        }
+        return props_MenuItemConcept;
+      case LanguageConceptSwitch.OrderConcept:
+        if (props_OrderConcept == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("OrderConcept");
+          props_OrderConcept = cpb.create();
+        }
+        return props_OrderConcept;
+      case LanguageConceptSwitch.OrderItemConcept:
+        if (props_OrderItemConcept == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da4L, 0x2bec263502412e11L, "menuItem", "", "");
+          props_OrderItemConcept = cpb.create();
+        }
+        return props_OrderItemConcept;
       case LanguageConceptSwitch.RPOS:
         if (props_RPOS == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -23,6 +82,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_RPOS = cpb.create();
         }
         return props_RPOS;
+      case LanguageConceptSwitch.SalesConcept:
+        if (props_SalesConcept == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da7L, 0x2c84f4c6bbf6257cL, "transaction", "", "");
+          props_SalesConcept = cpb.create();
+        }
+        return props_SalesConcept;
+      case LanguageConceptSwitch.TableConcept:
+        if (props_TableConcept == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("TableConcept");
+          props_TableConcept = cpb.create();
+        }
+        return props_TableConcept;
+      case LanguageConceptSwitch.TransactionConcept:
+        if (props_TransactionConcept == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("TransactionConcept");
+          props_TransactionConcept = cpb.create();
+        }
+        return props_TransactionConcept;
     }
     return null;
   }

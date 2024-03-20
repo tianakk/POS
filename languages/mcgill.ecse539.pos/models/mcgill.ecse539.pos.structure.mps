@@ -5,6 +5,7 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -28,6 +29,7 @@
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
@@ -47,19 +49,61 @@
     <node concept="PrWs8" id="2JG9zk2fXDs" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="2JG9zk2giQt" role="1TKVEi">
-      <property role="IQ2ns" value="3164946647247564189" />
+    <node concept="1TJgyj" id="2M4XcqVXyjf" role="1TKVEi">
+      <property role="IQ2ns" value="3207957968988808399" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="InputField" />
-      <ref role="20lvS9" node="2JG9zk2giPJ" resolve="InputField" />
+      <property role="20kJfa" value="bills" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2JG9zk2giQ_" resolve="BillConcept" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="2JG9zk2giPJ">
-    <property role="EcuMT" value="3164946647247564143" />
-    <property role="TrG5h" value="InputField" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="PrWs8" id="2JG9zk2giPL" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="1TJgyj" id="2M4XcqVXyjh" role="1TKVEi">
+      <property role="IQ2ns" value="3207957968988808401" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="employees" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2JG9zk2giQC" resolve="EmployeeConcept" />
+    </node>
+    <node concept="1TJgyj" id="2M4XcqVXyjk" role="1TKVEi">
+      <property role="IQ2ns" value="3207957968988808404" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="inventory" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2JG9zk2giQz" resolve="InventoryConcept" />
+    </node>
+    <node concept="1TJgyj" id="2M4XcqVXyjo" role="1TKVEi">
+      <property role="IQ2ns" value="3207957968988808408" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="menuItems" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2JG9zk2giQw" resolve="MenuItemConcept" />
+    </node>
+    <node concept="1TJgyj" id="2M4XcqVXyju" role="1TKVEi">
+      <property role="IQ2ns" value="3207957968988808414" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="orders" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2JG9zk2giQx" resolve="OrderConcept" />
+    </node>
+    <node concept="1TJgyj" id="2M4XcqVXyj$" role="1TKVEi">
+      <property role="IQ2ns" value="3207957968988808420" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="tables" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2JG9zk2giQy" resolve="TableConcept" />
+    </node>
+    <node concept="1TJgyj" id="2M4XcqVXyjF" role="1TKVEi">
+      <property role="IQ2ns" value="3207957968988808427" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="sales" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2JG9zk2giQB" resolve="SalesConcept" />
+    </node>
+    <node concept="1TJgyj" id="2M4XcqVXyjN" role="1TKVEi">
+      <property role="IQ2ns" value="3207957968988808435" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="transactions" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2JG9zk2giQA" resolve="TransactionConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="2JG9zk2giQw">
@@ -81,6 +125,11 @@
       <property role="TrG5h" value="price" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyj" id="2M4XcqVXyob" role="1TKVEi">
+      <property role="IQ2ns" value="3207957968988808715" />
+      <property role="20kJfa" value="ingredients" />
+      <ref role="20lvS9" node="2M4XcqVXyky" resolve="InventoryItemConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2JG9zk2giQx">
     <property role="EcuMT" value="3164946647247564193" />
@@ -95,12 +144,19 @@
       <property role="IQ2ns" value="3164946647247564271" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="orderItem" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2JG9zk2giQ$" resolve="OrderItemConcept" />
     </node>
     <node concept="1TJgyj" id="2JG9zk2giRP" role="1TKVEi">
       <property role="IQ2ns" value="3164946647247564277" />
       <property role="20kJfa" value="table" />
       <ref role="20lvS9" node="2JG9zk2giQy" resolve="TableConcept" />
+    </node>
+    <node concept="1TJgyj" id="2M4XcqVXylr" role="1TKVEi">
+      <property role="IQ2ns" value="3207957968988808539" />
+      <property role="20kJfa" value="bill" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2JG9zk2giQ_" resolve="BillConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="2JG9zk2giQy">
@@ -112,10 +168,9 @@
       <property role="TrG5h" value="tableNumber" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyj" id="2JG9zk2giRY" role="1TKVEi">
-      <property role="IQ2ns" value="3164946647247564286" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="tableOrder" />
+    <node concept="1TJgyj" id="2M4XcqVXym7" role="1TKVEi">
+      <property role="IQ2ns" value="3207957968988808583" />
+      <property role="20kJfa" value="currOrder" />
       <ref role="20lvS9" node="2JG9zk2giQx" resolve="OrderConcept" />
     </node>
   </node>
@@ -123,11 +178,12 @@
     <property role="EcuMT" value="3164946647247564195" />
     <property role="TrG5h" value="InventoryConcept" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="1TJgyj" id="2JG9zk2giS1" role="1TKVEi">
-      <property role="IQ2ns" value="3164946647247564289" />
+    <node concept="1TJgyj" id="2M4XcqVXyk_" role="1TKVEi">
+      <property role="IQ2ns" value="3207957968988808485" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="menuItem" />
-      <ref role="20lvS9" node="2JG9zk2giQw" resolve="MenuItemConcept" />
+      <property role="20kJfa" value="inventoryItems" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2M4XcqVXyky" resolve="InventoryItemConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="2JG9zk2giQ$">
@@ -142,11 +198,12 @@
     <node concept="1TJgyi" id="2JG9zk2giS6" role="1TKVEl">
       <property role="IQ2nx" value="3164946647247564294" />
       <property role="TrG5h" value="subtotal" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" to="tpee:4_5hYVHKxAU" resolve="_FloatNumberValue" />
     </node>
     <node concept="1TJgyj" id="2JG9zk2giSh" role="1TKVEi">
       <property role="IQ2ns" value="3164946647247564305" />
       <property role="20kJfa" value="menuItem" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2JG9zk2giQw" resolve="MenuItemConcept" />
     </node>
   </node>
@@ -159,14 +216,17 @@
       <property role="TrG5h" value="totalAmount" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyj" id="2JG9zk2giSo" role="1TKVEi">
-      <property role="IQ2ns" value="3164946647247564312" />
-      <property role="20kJfa" value="table" />
-      <ref role="20lvS9" node="2JG9zk2giQy" resolve="TableConcept" />
+    <node concept="1TJgyj" id="2M4XcqVXylb" role="1TKVEi">
+      <property role="IQ2ns" value="3207957968988808523" />
+      <property role="20kJfa" value="order" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2JG9zk2giQx" resolve="OrderConcept" />
     </node>
-    <node concept="1TJgyj" id="2JG9zk2giSq" role="1TKVEi">
-      <property role="IQ2ns" value="3164946647247564314" />
-      <property role="20kJfa" value="orderList" />
+    <node concept="1TJgyj" id="2M4XcqVXylK" role="1TKVEi">
+      <property role="IQ2ns" value="3207957968988808560" />
+      <property role="20kJfa" value="transaction" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2JG9zk2giQA" resolve="TransactionConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="2JG9zk2giQA">
@@ -183,10 +243,17 @@
       <property role="TrG5h" value="paymentStatus" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="1TJgyj" id="2JG9zk2giSC" role="1TKVEi">
-      <property role="IQ2ns" value="3164946647247564328" />
-      <property role="20kJfa" value="table" />
-      <ref role="20lvS9" node="2JG9zk2giQy" resolve="TableConcept" />
+    <node concept="1TJgyj" id="2M4XcqVXylI" role="1TKVEi">
+      <property role="IQ2ns" value="3207957968988808558" />
+      <property role="20kJfa" value="bill" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2JG9zk2giQ_" resolve="BillConcept" />
+    </node>
+    <node concept="1TJgyj" id="2M4XcqVXylN" role="1TKVEi">
+      <property role="IQ2ns" value="3207957968988808563" />
+      <property role="20kJfa" value="sale" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2JG9zk2giQB" resolve="SalesConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="2JG9zk2giQB">
@@ -198,9 +265,16 @@
       <property role="TrG5h" value="totalSales" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyi" id="2JG9zk2giSG" role="1TKVEl">
-      <property role="IQ2nx" value="3164946647247564332" />
-      <property role="TrG5h" value="salesDate" />
+    <node concept="1TJgyi" id="2M4XcqVXym4" role="1TKVEl">
+      <property role="IQ2nx" value="3207957968988808580" />
+      <property role="TrG5h" value="salesDateTime" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="2M4XcqVXylW" role="1TKVEi">
+      <property role="IQ2ns" value="3207957968988808572" />
+      <property role="20kJfa" value="transaction" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2JG9zk2giQA" resolve="TransactionConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="2JG9zk2giQC">
@@ -214,6 +288,26 @@
     </node>
     <node concept="1TJgyi" id="2JG9zk2giSU" role="1TKVEl">
       <property role="IQ2nx" value="3164946647247564346" />
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="2M4XcqVXyo0" role="1TKVEi">
+      <property role="IQ2ns" value="3207957968988808704" />
+      <property role="20kJfa" value="tables" />
+      <ref role="20lvS9" node="2JG9zk2giQy" resolve="TableConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2M4XcqVXyky">
+    <property role="EcuMT" value="3207957968988808482" />
+    <property role="TrG5h" value="InventoryItemConcept" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="2M4XcqVXykB" role="1TKVEl">
+      <property role="IQ2nx" value="3207957968988808487" />
+      <property role="TrG5h" value="quantity" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="2M4XcqVXykN" role="1TKVEl">
+      <property role="IQ2nx" value="3207957968988808499" />
       <property role="TrG5h" value="name" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
