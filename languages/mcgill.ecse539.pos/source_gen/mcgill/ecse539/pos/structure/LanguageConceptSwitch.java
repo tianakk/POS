@@ -16,7 +16,7 @@ public final class LanguageConceptSwitch {
   public static final int MenuItemConcept = 4;
   public static final int OrderConcept = 5;
   public static final int OrderItemConcept = 6;
-  public static final int RPOS = 7;
+  public static final int POS = 7;
   public static final int SalesConcept = 8;
   public static final int TableConcept = 9;
   public static final int TransactionConcept = 10;
@@ -30,7 +30,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x2bec263502412da0L, MenuItemConcept);
     builder.put(0x2bec263502412da1L, OrderConcept);
     builder.put(0x2bec263502412da4L, OrderItemConcept);
-    builder.put(0x2bec2635023fda5bL, RPOS);
+    builder.put(0x2bec2635023fda5bL, POS);
     builder.put(0x2bec263502412da7L, SalesConcept);
     builder.put(0x2bec263502412da2L, TableConcept);
     builder.put(0x2bec263502412da6L, TransactionConcept);

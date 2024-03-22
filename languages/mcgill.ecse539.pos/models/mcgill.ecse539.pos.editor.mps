@@ -47,7 +47,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="2JG9zk2fXDw">
-    <ref role="1XX52x" to="cxe5:2JG9zk2fXDr" resolve="RPOS" />
+    <ref role="1XX52x" to="cxe5:2JG9zk2fXDr" resolve="POS" />
     <node concept="3EZMnI" id="2JG9zk2fXDy" role="2wV5jI">
       <node concept="3F0ifn" id="2JG9zk2fXDG" role="3EZMnx">
         <property role="3F0ifm" value="restaurant" />

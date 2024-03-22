@@ -21,7 +21,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptMenuItemConcept = createDescriptorForMenuItemConcept();
   /*package*/ final ConceptDescriptor myConceptOrderConcept = createDescriptorForOrderConcept();
   /*package*/ final ConceptDescriptor myConceptOrderItemConcept = createDescriptorForOrderItemConcept();
-  /*package*/ final ConceptDescriptor myConceptRPOS = createDescriptorForRPOS();
+  /*package*/ final ConceptDescriptor myConceptPOS = createDescriptorForPOS();
   /*package*/ final ConceptDescriptor myConceptSalesConcept = createDescriptorForSalesConcept();
   /*package*/ final ConceptDescriptor myConceptTableConcept = createDescriptorForTableConcept();
   /*package*/ final ConceptDescriptor myConceptTransactionConcept = createDescriptorForTransactionConcept();
@@ -39,7 +39,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBillConcept, myConceptEmployeeConcept, myConceptInventoryConcept, myConceptInventoryItemConcept, myConceptMenuItemConcept, myConceptOrderConcept, myConceptOrderItemConcept, myConceptRPOS, myConceptSalesConcept, myConceptTableConcept, myConceptTransactionConcept);
+    return Arrays.asList(myConceptBillConcept, myConceptEmployeeConcept, myConceptInventoryConcept, myConceptInventoryItemConcept, myConceptMenuItemConcept, myConceptOrderConcept, myConceptOrderItemConcept, myConceptPOS, myConceptSalesConcept, myConceptTableConcept, myConceptTransactionConcept);
   }
 
   @Override
@@ -60,8 +60,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptOrderConcept;
       case LanguageConceptSwitch.OrderItemConcept:
         return myConceptOrderItemConcept;
-      case LanguageConceptSwitch.RPOS:
-        return myConceptRPOS;
+      case LanguageConceptSwitch.POS:
+        return myConceptPOS;
       case LanguageConceptSwitch.SalesConcept:
         return myConceptSalesConcept;
       case LanguageConceptSwitch.TableConcept:
@@ -147,8 +147,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("menuItem", 0x2bec263502412e11L).target(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da0L).optional(false).origin("3164946647247564305").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForRPOS() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("mcgill.ecse539.pos", "RPOS", 0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec2635023fda5bL);
+  private static ConceptDescriptor createDescriptorForPOS() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("mcgill.ecse539.pos", "POS", 0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec2635023fda5bL);
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:edde5c6d-59a6-4f21-aecc-a80aa141374b(mcgill.ecse539.pos.structure)/3164946647247477339");

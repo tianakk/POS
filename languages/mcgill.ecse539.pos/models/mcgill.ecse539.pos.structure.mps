@@ -43,7 +43,7 @@
   </registry>
   <node concept="1TIwiD" id="2JG9zk2fXDr">
     <property role="EcuMT" value="3164946647247477339" />
-    <property role="TrG5h" value="RPOS" />
+    <property role="TrG5h" value="POS" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="2JG9zk2fXDs" role="PzmwI">

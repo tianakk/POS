@@ -260,7 +260,7 @@
       <property role="eg7rD" value="false" />
       <property role="34CwA1" value="false" />
       <property role="3TUv4t" value="false" />
-      <property role="TrG5h" value="props_RPOS" />
+      <property role="TrG5h" value="props_POS" />
       <node concept="3uibUv" id="u" role="1tU5fm">
         <ref role="3uigEE" to="ze1i:~ConceptPresentation" resolve="ConceptPresentation" />
       </node>
@@ -871,7 +871,7 @@
                         </node>
                       </node>
                       <node concept="37vLTw" id="4e" role="37vLTJ">
-                        <ref role="3cqZAo" node="9" resolve="props_RPOS" />
+                        <ref role="3cqZAo" node="9" resolve="props_POS" />
                       </node>
                     </node>
                   </node>
@@ -879,19 +879,19 @@
                 <node concept="3clFbC" id="41" role="3clFbw">
                   <node concept="10Nm6u" id="4h" role="3uHU7w" />
                   <node concept="37vLTw" id="4i" role="3uHU7B">
-                    <ref role="3cqZAo" node="9" resolve="props_RPOS" />
+                    <ref role="3cqZAo" node="9" resolve="props_POS" />
                   </node>
                 </node>
               </node>
               <node concept="3cpWs6" id="3Z" role="3cqZAp">
                 <node concept="37vLTw" id="4j" role="3cqZAk">
-                  <ref role="3cqZAo" node="9" resolve="props_RPOS" />
+                  <ref role="3cqZAo" node="9" resolve="props_POS" />
                 </node>
               </node>
             </node>
             <node concept="10M0yZ" id="3X" role="3Kbmr1">
               <ref role="1PxDUh" node="5H" resolve="LanguageConceptSwitch" />
-              <ref role="3cqZAo" node="5Q" resolve="RPOS" />
+              <ref role="3cqZAo" node="5Q" resolve="POS" />
             </node>
           </node>
           <node concept="3KbdKl" id="11" role="3KbHQx">
@@ -1246,7 +1246,7 @@
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="RPOS" />
+      <property role="TrG5h" value="POS" />
       <node concept="3Tm1VV" id="6o" role="1B3o_S" />
       <node concept="10Oyi0" id="6p" role="1tU5fm" />
       <node concept="3cmrfG" id="6q" role="33vP2m">
@@ -1433,7 +1433,7 @@
                 <property role="1adDun" value="0x2bec2635023fda5bL" />
               </node>
               <node concept="37vLTw" id="7x" role="37wK5m">
-                <ref role="3cqZAo" node="5Q" resolve="RPOS" />
+                <ref role="3cqZAo" node="5Q" resolve="POS" />
               </node>
             </node>
           </node>
@@ -1651,12 +1651,12 @@
       <property role="eg7rD" value="false" />
       <property role="34CwA1" value="false" />
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="myConceptRPOS" />
+      <property role="TrG5h" value="myConceptPOS" />
       <node concept="3uibUv" id="8Y" role="1tU5fm">
         <ref role="3uigEE" to="ze1i:~ConceptDescriptor" resolve="ConceptDescriptor" />
       </node>
       <node concept="1rXfSq" id="8Z" role="33vP2m">
-        <ref role="37wK5l" node="8G" resolve="createDescriptorForRPOS" />
+        <ref role="37wK5l" node="8G" resolve="createDescriptorForPOS" />
       </node>
     </node>
     <node concept="312cEg" id="8j" role="jymVt">
@@ -1793,7 +1793,7 @@
               <ref role="3cqZAo" node="8h" resolve="myConceptOrderItemConcept" />
             </node>
             <node concept="37vLTw" id="9E" role="37wK5m">
-              <ref role="3cqZAo" node="8i" resolve="myConceptRPOS" />
+              <ref role="3cqZAo" node="8i" resolve="myConceptPOS" />
             </node>
             <node concept="37vLTw" id="9F" role="37wK5m">
               <ref role="3cqZAo" node="8j" resolve="myConceptSalesConcept" />
@@ -1927,13 +1927,13 @@
             <node concept="3clFbS" id="aw" role="3Kbo56">
               <node concept="3cpWs6" id="ay" role="3cqZAp">
                 <node concept="37vLTw" id="az" role="3cqZAk">
-                  <ref role="3cqZAo" node="8i" resolve="myConceptRPOS" />
+                  <ref role="3cqZAo" node="8i" resolve="myConceptPOS" />
                 </node>
               </node>
             </node>
             <node concept="10M0yZ" id="ax" role="3Kbmr1">
               <ref role="1PxDUh" node="5H" resolve="LanguageConceptSwitch" />
-              <ref role="3cqZAo" node="5Q" resolve="RPOS" />
+              <ref role="3cqZAo" node="5Q" resolve="POS" />
             </node>
           </node>
           <node concept="3KbdKl" id="9Z" role="3KbHQx">
@@ -3568,7 +3568,7 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="createDescriptorForRPOS" />
+      <property role="TrG5h" value="createDescriptorForPOS" />
       <node concept="3clFbS" id="k0" role="3clF47">
         <node concept="3cpWs8" id="k3" role="3cqZAp">
           <node concept="3cpWsn" id="kh" role="3cpWs9">
@@ -3583,7 +3583,7 @@
                   <property role="Xl_RC" value="mcgill.ecse539.pos" />
                 </node>
                 <node concept="Xl_RD" id="km" role="37wK5m">
-                  <property role="Xl_RC" value="RPOS" />
+                  <property role="Xl_RC" value="POS" />
                 </node>
                 <node concept="1adDum" id="kn" role="37wK5m">
                   <property role="1adDun" value="0x7d3ecb5c844f43f0L" />

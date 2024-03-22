@@ -20,26 +20,26 @@
   </root>
   <root nodeRef="r:edde5c6d-59a6-4f21-aecc-a80aa141374b(mcgill.ecse539.pos.structure)/3164946647247477339">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="3164946647247477339" at="19,0,20,0" concept="1" trace="props_RPOS" />
-      <node id="3164946647247477339" at="79,33,80,76" concept="3" />
+      <node id="3164946647247477339" at="19,0,20,0" concept="1" trace="props_POS" />
+      <node id="3164946647247477339" at="79,32,80,76" concept="3" />
       <node id="3164946647247477339" at="80,76,81,35" concept="0" />
-      <node id="3164946647247477339" at="81,35,82,36" concept="0" />
-      <node id="3164946647247477339" at="83,9,84,26" concept="4" />
-      <node id="3164946647247477339" at="78,38,83,9" concept="2" />
-      <scope id="3164946647247477339" at="79,33,82,36">
+      <node id="3164946647247477339" at="81,35,82,35" concept="0" />
+      <node id="3164946647247477339" at="83,9,84,25" concept="4" />
+      <node id="3164946647247477339" at="78,37,83,9" concept="2" />
+      <scope id="3164946647247477339" at="79,32,82,35">
         <var name="cpb" id="3164946647247477339" />
       </scope>
-      <scope id="3164946647247477339" at="78,38,84,26" />
+      <scope id="3164946647247477339" at="78,37,84,25" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="3164946647247477339" at="19,0,20,0" concept="5" trace="RPOS" />
-      <node id="3164946647247477339" at="32,55,33,43" concept="0" />
+      <node id="3164946647247477339" at="19,0,20,0" concept="5" trace="POS" />
+      <node id="3164946647247477339" at="32,55,33,42" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="3164946647247477339" at="24,0,25,0" concept="1" trace="myConceptRPOS" />
-      <node id="3164946647247477339" at="63,38,64,29" concept="4" />
-      <node id="3164946647247477339" at="150,62,151,157" concept="3" />
-      <node id="3164946647247477339" at="151,157,152,33" concept="0" />
+      <node id="3164946647247477339" at="24,0,25,0" concept="1" trace="myConceptPOS" />
+      <node id="3164946647247477339" at="63,37,64,28" concept="4" />
+      <node id="3164946647247477339" at="150,61,151,156" concept="3" />
+      <node id="3164946647247477339" at="151,156,152,33" concept="0" />
       <node id="3164946647247477339" at="152,33,153,71" concept="0" />
       <node id="3164946647247477339" at="153,71,154,105" concept="0" />
       <node id="3164946647247477339" at="154,105,155,17" concept="0" />
@@ -52,9 +52,9 @@
       <node id="3207957968988808427" at="161,198,162,197" concept="0" />
       <node id="3207957968988808435" at="162,197,163,204" concept="0" />
       <node id="3164946647247477339" at="163,204,164,22" concept="4" />
-      <node id="3164946647247477339" at="150,0,166,0" concept="6" trace="createDescriptorForRPOS#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="3164946647247477339" at="63,38,64,29" />
-      <scope id="3164946647247477339" at="150,62,164,22">
+      <node id="3164946647247477339" at="150,0,166,0" concept="6" trace="createDescriptorForPOS#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3164946647247477339" at="63,37,64,28" />
+      <scope id="3164946647247477339" at="150,61,164,22">
         <var name="b" id="3164946647247477339" />
       </scope>
       <scope id="3164946647247477339" at="150,0,166,0" />
@@ -327,7 +327,7 @@
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="3164946647247564199" at="20,0,21,0" concept="5" trace="SalesConcept" />
-      <node id="3164946647247564199" at="33,43,34,51" concept="0" />
+      <node id="3164946647247564199" at="33,42,34,51" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="3164946647247564199" at="25,0,26,0" concept="1" trace="myConceptSalesConcept" />

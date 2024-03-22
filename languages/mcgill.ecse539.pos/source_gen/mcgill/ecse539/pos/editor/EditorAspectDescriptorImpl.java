@@ -33,7 +33,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 6:
         return Collections.<ConceptEditor>singletonList(new OrderItemConcept_Editor());
       case 7:
-        return Collections.<ConceptEditor>singletonList(new RPOS_Editor());
+        return Collections.<ConceptEditor>singletonList(new POS_Editor());
       case 8:
         return Collections.<ConceptEditor>singletonList(new SalesConcept_Editor());
       case 9:

@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="QueriesGenerated.java">
-      <unit at="8,0,14,0" name="mcgill.ecse539.pos.generator.templates.QueriesGenerated" />
+      <unit at="55,0,58,0" name="mcgill.ecse539.pos.generator.templates.QueriesGenerated$PROPS" />
+      <unit at="38,0,54,0" name="mcgill.ecse539.pos.generator.templates.QueriesGenerated$PVQ" />
+      <unit at="19,0,59,0" name="mcgill.ecse539.pos.generator.templates.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:15c0d27b-811a-4463-9241-048fe7e4a112(mcgill.ecse539.pos.generator.templates@generator)/3689855222638155650">
+    <file name="QueriesGenerated.java">
+      <node id="3689855222638331509" at="24,88,25,78" concept="1" />
+      <node id="3689855222638325630" at="29,14,30,181" concept="0" />
+      <node id="3689855222638325630" at="47,15,48,66" concept="1" />
+      <node id="3689855222638325631" at="24,0,27,0" concept="2" trace="propertyMacro_GetValue_1_0#(Ljetbrains/mps/generator/template/PropertyMacroContext;)Ljava/lang/Object;" />
+      <scope id="3689855222638325632" at="24,88,25,78" />
+      <scope id="3689855222638325630" at="47,15,48,66" />
+      <scope id="3689855222638325631" at="24,0,27,0">
+        <var name="_context" id="3689855222638325631" />
+      </scope>
     </file>
   </root>
 </debug-info>

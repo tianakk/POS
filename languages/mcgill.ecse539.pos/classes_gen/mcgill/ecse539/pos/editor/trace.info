@@ -30,18 +30,18 @@
     </file>
   </root>
   <root nodeRef="r:d44f5e8e-2152-4a72-b790-3ff81cd790bb(mcgill.ecse539.pos.editor)/3164946647247477344">
-    <file name="RPOS_Editor.java">
-      <node id="3164946647247477344" at="11,79,12,70" concept="6" />
+    <file name="POS_Editor.java">
+      <node id="3164946647247477344" at="11,79,12,69" concept="6" />
       <node id="3164946647247477344" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="3164946647247477344" at="11,79,12,70" />
+      <scope id="3164946647247477344" at="11,79,12,69" />
       <scope id="3164946647247477344" at="11,0,14,0">
         <var name="editorContext" id="3164946647247477344" />
         <var name="node" id="3164946647247477344" />
       </scope>
-      <unit id="3164946647247477344" at="10,0,15,0" name="mcgill.ecse539.pos.editor.RPOS_Editor" />
+      <unit id="3164946647247477344" at="10,0,15,0" name="mcgill.ecse539.pos.editor.POS_Editor" />
     </file>
-    <file name="RPOS_EditorBuilder_a.java">
-      <node id="3164946647247477344" at="47,84,48,19" concept="8" />
+    <file name="POS_EditorBuilder_a.java">
+      <node id="3164946647247477344" at="47,83,48,19" concept="8" />
       <node id="3164946647247477344" at="48,19,49,18" concept="1" />
       <node id="3164946647247477344" at="54,26,55,18" concept="6" />
       <node id="3164946647247477344" at="58,39,59,32" concept="6" />
@@ -249,20 +249,20 @@
       <node id="3164946647247477344" at="371,0,374,0" concept="4" trace="getSLink#()Lorg/jetbrains/mps/openapi/language/SContainmentLink;" />
       <node id="3164946647247477344" at="374,0,377,0" concept="4" trace="getChildSConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="3164946647247477344" at="418,96,421,9" concept="3" />
-      <node id="3164946647247477344" at="47,0,51,0" concept="0" trace="RPOS_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3164946647247477344" at="47,0,51,0" concept="0" trace="POS_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3164946647247477344" at="108,0,112,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="3164946647247477344" at="116,0,120,0" concept="0" trace="inventorySingleRoleHandler_kk7ht1_c0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
-      <node id="3164946647247477344" at="190,0,194,0" concept="0" trace="tablesListHandler_kk7ht1_e0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="3164946647247477344" at="116,0,120,0" concept="0" trace="inventorySingleRoleHandler_vhhmgs_c0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="3164946647247477344" at="190,0,194,0" concept="0" trace="tablesListHandler_vhhmgs_e0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="3164946647247477344" at="195,0,199,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3164946647247477344" at="228,97,232,9" concept="3" />
       <node id="3164946647247477344" at="234,95,238,9" concept="3" />
       <node id="3164946647247477344" at="240,74,244,9" concept="3" />
-      <node id="3164946647247477344" at="276,0,280,0" concept="0" trace="employeesListHandler_kk7ht1_g0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="3164946647247477344" at="276,0,280,0" concept="0" trace="employeesListHandler_vhhmgs_g0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="3164946647247477344" at="281,0,285,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3164946647247477344" at="314,97,318,9" concept="3" />
       <node id="3164946647247477344" at="320,95,324,9" concept="3" />
       <node id="3164946647247477344" at="326,74,330,9" concept="3" />
-      <node id="3164946647247477344" at="362,0,366,0" concept="0" trace="menuItemsListHandler_kk7ht1_i0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="3164946647247477344" at="362,0,366,0" concept="0" trace="menuItemsListHandler_vhhmgs_i0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="3164946647247477344" at="367,0,371,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3164946647247477344" at="400,97,404,9" concept="3" />
       <node id="3164946647247477344" at="406,95,410,9" concept="3" />
@@ -331,7 +331,7 @@
       <scope id="3164946647247477344" at="374,48,375,41" />
       <scope id="3164946647247477344" at="392,17,393,42" />
       <scope id="3164946647247477344" at="419,34,420,91" />
-      <scope id="3164946647247477344" at="47,84,49,18" />
+      <scope id="3164946647247477344" at="47,83,49,18" />
       <scope id="3164946647247477362" at="99,74,101,145">
         <var name="manager" id="3164946647247477362" />
       </scope>
@@ -518,14 +518,14 @@
         <var name="elementNode" id="3164946647247477344" />
         <var name="isEmptyCell" id="3164946647247477344" />
       </scope>
-      <unit id="3164946647247477344" at="426,0,429,0" name="mcgill.ecse539.pos.editor.RPOS_EditorBuilder_a$PROPS" />
-      <unit id="3164946647247477344" at="430,0,436,0" name="mcgill.ecse539.pos.editor.RPOS_EditorBuilder_a$CONCEPTS" />
-      <unit id="3164946647247477344" at="437,0,443,0" name="mcgill.ecse539.pos.editor.RPOS_EditorBuilder_a$LINKS" />
-      <unit id="3164946647247477344" at="112,0,166,0" name="mcgill.ecse539.pos.editor.RPOS_EditorBuilder_a$inventorySingleRoleHandler_kk7ht1_c0" />
-      <unit id="3164946647247477344" at="186,0,253,0" name="mcgill.ecse539.pos.editor.RPOS_EditorBuilder_a$tablesListHandler_kk7ht1_e0" />
-      <unit id="3164946647247477344" at="272,0,339,0" name="mcgill.ecse539.pos.editor.RPOS_EditorBuilder_a$employeesListHandler_kk7ht1_g0" />
-      <unit id="3164946647247477344" at="358,0,425,0" name="mcgill.ecse539.pos.editor.RPOS_EditorBuilder_a$menuItemsListHandler_kk7ht1_i0" />
-      <unit id="3164946647247477344" at="43,0,444,0" name="mcgill.ecse539.pos.editor.RPOS_EditorBuilder_a" />
+      <unit id="3164946647247477344" at="426,0,429,0" name="mcgill.ecse539.pos.editor.POS_EditorBuilder_a$PROPS" />
+      <unit id="3164946647247477344" at="430,0,436,0" name="mcgill.ecse539.pos.editor.POS_EditorBuilder_a$CONCEPTS" />
+      <unit id="3164946647247477344" at="437,0,443,0" name="mcgill.ecse539.pos.editor.POS_EditorBuilder_a$LINKS" />
+      <unit id="3164946647247477344" at="112,0,166,0" name="mcgill.ecse539.pos.editor.POS_EditorBuilder_a$inventorySingleRoleHandler_vhhmgs_c0" />
+      <unit id="3164946647247477344" at="186,0,253,0" name="mcgill.ecse539.pos.editor.POS_EditorBuilder_a$tablesListHandler_vhhmgs_e0" />
+      <unit id="3164946647247477344" at="272,0,339,0" name="mcgill.ecse539.pos.editor.POS_EditorBuilder_a$employeesListHandler_vhhmgs_g0" />
+      <unit id="3164946647247477344" at="358,0,425,0" name="mcgill.ecse539.pos.editor.POS_EditorBuilder_a$menuItemsListHandler_vhhmgs_i0" />
+      <unit id="3164946647247477344" at="43,0,444,0" name="mcgill.ecse539.pos.editor.POS_EditorBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:d44f5e8e-2152-4a72-b790-3ff81cd790bb(mcgill.ecse539.pos.editor)/3164946647247564202">

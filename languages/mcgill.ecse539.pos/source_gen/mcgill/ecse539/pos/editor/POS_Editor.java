@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class RPOS_Editor extends DefaultNodeEditor {
+public class POS_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new RPOS_EditorBuilder_a(editorContext, node).createCell();
+    return new POS_EditorBuilder_a(editorContext, node).createCell();
   }
 }

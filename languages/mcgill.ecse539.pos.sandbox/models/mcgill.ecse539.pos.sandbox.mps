@@ -9,7 +9,7 @@
   <registry>
     <language id="7d3ecb5c-844f-43f0-98db-2b52b269987b" name="mcgill.ecse539.pos">
       <concept id="3164946647247564195" name="mcgill.ecse539.pos.structure.InventoryConcept" flags="ng" index="DFgIm" />
-      <concept id="3164946647247477339" name="mcgill.ecse539.pos.structure.RPOS" flags="ng" index="DOZLI">
+      <concept id="3164946647247477339" name="mcgill.ecse539.pos.structure.POS" flags="ng" index="DOZLI">
         <child id="3207957968988808404" name="inventory" index="2nsH0i" />
       </concept>
     </language>
@@ -20,7 +20,7 @@
     </language>
   </registry>
   <node concept="DOZLI" id="2JG9zk2giPI">
-    <property role="TrG5h" value="firstRestaurant" />
+    <property role="TrG5h" value="Restaurant" />
     <node concept="DFgIm" id="2M4XcqVYara" role="2nsH0i" />
   </node>
 </model>

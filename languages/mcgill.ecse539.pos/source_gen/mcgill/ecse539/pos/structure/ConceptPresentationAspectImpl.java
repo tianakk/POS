@@ -16,7 +16,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_MenuItemConcept;
   private ConceptPresentation props_OrderConcept;
   private ConceptPresentation props_OrderItemConcept;
-  private ConceptPresentation props_RPOS;
+  private ConceptPresentation props_POS;
   private ConceptPresentation props_SalesConcept;
   private ConceptPresentation props_TableConcept;
   private ConceptPresentation props_TransactionConcept;
@@ -75,13 +75,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_OrderItemConcept = cpb.create();
         }
         return props_OrderItemConcept;
-      case LanguageConceptSwitch.RPOS:
-        if (props_RPOS == null) {
+      case LanguageConceptSwitch.POS:
+        if (props_POS == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_RPOS = cpb.create();
+          props_POS = cpb.create();
         }
-        return props_RPOS;
+        return props_POS;
       case LanguageConceptSwitch.SalesConcept:
         if (props_SalesConcept == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
