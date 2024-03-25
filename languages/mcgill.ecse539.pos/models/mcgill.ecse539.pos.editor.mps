@@ -26,18 +26,11 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="6718020819487620876" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Default" flags="ng" index="A1WHr" />
       <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
         <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
       </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
-      </concept>
-      <concept id="1164996492011" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReferentPrimary" flags="ng" index="ZcVJ$">
-        <child id="6918029743851332884" name="matchingText" index="1NQq9M" />
-      </concept>
-      <concept id="1630016958697718209" name="jetbrains.mps.lang.editor.structure.IMenuReference_Default" flags="ngI" index="2Z_bC8">
-        <reference id="1630016958698373342" name="concept" index="2ZyFGn" />
       </concept>
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ngI" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
@@ -56,7 +49,6 @@
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
-        <child id="4202667662392416064" name="transformationMenu" index="3vIgyS" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -76,7 +68,6 @@
         <child id="1638911550608572412" name="sections" index="IW6Ez" />
       </concept>
       <concept id="6918029743850363447" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_targetNode" flags="ng" index="1NM5Ph" />
-      <concept id="6918029743850308467" name="jetbrains.mps.lang.editor.structure.QueryFunction_RefPresentation" flags="ig" index="1NMggl" />
       <concept id="422708224287891156" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_ReferenceMenu" flags="ng" index="3PzhKR">
         <reference id="422708224287891157" name="referenceLink" index="3PzhKQ" />
         <child id="8537008540390643508" name="textFunction" index="w35GX" />
@@ -332,25 +323,6 @@
           <ref role="1NtTu8" to="cxe5:2M4XcqVXykN" resolve="name" />
         </node>
       </node>
-      <node concept="OXEIz" id="1Tq8jHMvPWM" role="P5bDN">
-        <node concept="ZcVJ$" id="1Tq8jHMvPWO" role="OY2wv">
-          <node concept="1NMggl" id="1Tq8jHMvPWR" role="1NQq9M">
-            <node concept="3clFbS" id="1Tq8jHMvPWS" role="2VODD2">
-              <node concept="3clFbF" id="1Tq8jHMxQGW" role="3cqZAp">
-                <node concept="2OqwBi" id="1Tq8jHMvQCk" role="3clFbG">
-                  <node concept="1NM5Ph" id="1Tq8jHMvQd7" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="1Tq8jHMvQY1" role="2OqNvi">
-                    <ref role="3TsBF5" to="cxe5:2M4XcqVXykN" resolve="name" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="A1WHr" id="1Tq8jHMwJM6" role="3vIgyS">
-        <ref role="2ZyFGn" to="cxe5:1Tq8jHMtmLx" resolve="IngredientConcept" />
-      </node>
     </node>
   </node>
   <node concept="3ICUPy" id="1Tq8jHMv1jx">
@@ -359,7 +331,7 @@
     <node concept="1Qtc8_" id="1Tq8jHMv1j$" role="IW6Ez">
       <node concept="3eGOoe" id="1Tq8jHMv1jC" role="1Qtc8$" />
       <node concept="3PzhKR" id="1Tq8jHMv1jF" role="1Qtc8A">
-        <ref role="3PzhKQ" to="cxe5:1Tq8jHMtmLy" />
+        <ref role="3PzhKQ" to="cxe5:1Tq8jHMtmLy" resolve="inventoryItem" />
         <node concept="1hCUdq" id="1Tq8jHMv1jH" role="w35GX">
           <node concept="3clFbS" id="1Tq8jHMv1jI" role="2VODD2">
             <node concept="3clFbF" id="1Tq8jHMxQmW" role="3cqZAp">
