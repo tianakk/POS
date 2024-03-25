@@ -125,10 +125,12 @@
       <property role="TrG5h" value="price" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyj" id="2M4XcqVXyob" role="1TKVEi">
-      <property role="IQ2ns" value="3207957968988808715" />
-      <property role="20kJfa" value="ingredients" />
-      <ref role="20lvS9" node="2M4XcqVXyky" resolve="InventoryItemConcept" />
+    <node concept="1TJgyj" id="1Tq8jHMtmLu" role="1TKVEi">
+      <property role="IQ2ns" value="2187097108248882270" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="IngredientConcept" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="1Tq8jHMtmLx" resolve="IngredientConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="2JG9zk2giQx">
@@ -310,6 +312,17 @@
       <property role="IQ2nx" value="3207957968988808499" />
       <property role="TrG5h" value="name" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Tq8jHMtmLx">
+    <property role="EcuMT" value="2187097108248882273" />
+    <property role="TrG5h" value="IngredientConcept" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="1Tq8jHMtmLy" role="1TKVEi">
+      <property role="IQ2ns" value="2187097108248882274" />
+      <property role="20kJfa" value="inventoryItem" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2M4XcqVXyky" resolve="InventoryItemConcept" />
     </node>
   </node>
 </model>

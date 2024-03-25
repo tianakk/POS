@@ -11,6 +11,7 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_BillConcept;
   private ConceptPresentation props_EmployeeConcept;
+  private ConceptPresentation props_IngredientConcept;
   private ConceptPresentation props_InventoryConcept;
   private ConceptPresentation props_InventoryItemConcept;
   private ConceptPresentation props_MenuItemConcept;
@@ -40,6 +41,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_EmployeeConcept = cpb.create();
         }
         return props_EmployeeConcept;
+      case LanguageConceptSwitch.IngredientConcept:
+        if (props_IngredientConcept == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x1e5a213b72756c61L, 0x1e5a213b72756c62L, "inventoryItem", "", "");
+          props_IngredientConcept = cpb.create();
+        }
+        return props_IngredientConcept;
       case LanguageConceptSwitch.InventoryConcept:
         if (props_InventoryConcept == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

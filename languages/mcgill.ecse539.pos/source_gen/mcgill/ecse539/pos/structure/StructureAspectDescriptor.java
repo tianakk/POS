@@ -16,6 +16,7 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptBillConcept = createDescriptorForBillConcept();
   /*package*/ final ConceptDescriptor myConceptEmployeeConcept = createDescriptorForEmployeeConcept();
+  /*package*/ final ConceptDescriptor myConceptIngredientConcept = createDescriptorForIngredientConcept();
   /*package*/ final ConceptDescriptor myConceptInventoryConcept = createDescriptorForInventoryConcept();
   /*package*/ final ConceptDescriptor myConceptInventoryItemConcept = createDescriptorForInventoryItemConcept();
   /*package*/ final ConceptDescriptor myConceptMenuItemConcept = createDescriptorForMenuItemConcept();
@@ -39,7 +40,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBillConcept, myConceptEmployeeConcept, myConceptInventoryConcept, myConceptInventoryItemConcept, myConceptMenuItemConcept, myConceptOrderConcept, myConceptOrderItemConcept, myConceptPOS, myConceptSalesConcept, myConceptTableConcept, myConceptTransactionConcept);
+    return Arrays.asList(myConceptBillConcept, myConceptEmployeeConcept, myConceptIngredientConcept, myConceptInventoryConcept, myConceptInventoryItemConcept, myConceptMenuItemConcept, myConceptOrderConcept, myConceptOrderItemConcept, myConceptPOS, myConceptSalesConcept, myConceptTableConcept, myConceptTransactionConcept);
   }
 
   @Override
@@ -50,6 +51,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptBillConcept;
       case LanguageConceptSwitch.EmployeeConcept:
         return myConceptEmployeeConcept;
+      case LanguageConceptSwitch.IngredientConcept:
+        return myConceptIngredientConcept;
       case LanguageConceptSwitch.InventoryConcept:
         return myConceptInventoryConcept;
       case LanguageConceptSwitch.InventoryItemConcept:
@@ -98,6 +101,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("tables", 0x2c84f4c6bbf62600L).target(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da2L).optional(true).origin("3207957968988808704").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForIngredientConcept() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("mcgill.ecse539.pos", "IngredientConcept", 0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x1e5a213b72756c61L);
+    b.class_(false, false, false);
+    b.origin("r:edde5c6d-59a6-4f21-aecc-a80aa141374b(mcgill.ecse539.pos.structure)/2187097108248882273");
+    b.version(3);
+    b.associate("inventoryItem", 0x1e5a213b72756c62L).target(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2c84f4c6bbf62522L).optional(false).origin("2187097108248882274").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForInventoryConcept() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("mcgill.ecse539.pos", "InventoryConcept", 0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da3L);
     b.class_(false, false, false);
@@ -123,7 +134,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("id", 0x2bec263502412e43L).type(PrimitiveTypeId.INTEGER).origin("3164946647247564355").done();
     b.property("name", 0x2bec263502412e45L).type(PrimitiveTypeId.STRING).origin("3164946647247564357").done();
     b.property("price", 0x2bec263502412e48L).type(PrimitiveTypeId.INTEGER).origin("3164946647247564360").done();
-    b.associate("ingredients", 0x2c84f4c6bbf6260bL).target(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2c84f4c6bbf62522L).optional(true).origin("3207957968988808715").done();
+    b.aggregate("IngredientConcept", 0x1e5a213b72756c5eL).target(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x1e5a213b72756c61L).optional(false).ordered(true).multiple(true).origin("2187097108248882270").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForOrderConcept() {
