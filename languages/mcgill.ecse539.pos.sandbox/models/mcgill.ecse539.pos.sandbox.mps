@@ -37,6 +37,22 @@
   </registry>
   <node concept="DOZLI" id="2JG9zk2giPI">
     <property role="TrG5h" value="Restaurant" />
+    <node concept="DFgIl" id="1Tq8jHM$ZA_" role="2nsH0u">
+      <property role="DFgxK" value="a" />
+      <property role="DFgxX" value="12" />
+      <property role="DFgxQ" value="1" />
+      <node concept="1GbOPq" id="1Tq8jHM$ZAA" role="1GbOP_">
+        <ref role="1GbOPp" node="1Tq8jHMt6cD" />
+      </node>
+    </node>
+    <node concept="DFgIl" id="1Tq8jHM$ZAD" role="2nsH0u">
+      <property role="DFgxK" value="12" />
+      <property role="DFgxX" value="22" />
+      <property role="DFgxQ" value="12" />
+      <node concept="1GbOPq" id="1Tq8jHM$ZAE" role="1GbOP_">
+        <ref role="1GbOPp" node="1Tq8jHMyr$a" />
+      </node>
+    </node>
     <node concept="DFgIm" id="2M4XcqVYara" role="2nsH0i">
       <node concept="2nsH7$" id="1Tq8jHMt6cD" role="2nsH7z">
         <property role="2nsH7P" value="posca" />
@@ -57,25 +73,6 @@
       <node concept="2nsH7$" id="1Tq8jHMt6cQ" role="2nsH7z">
         <property role="2nsH7P" value="vinum" />
         <property role="2nsH7x" value="12" />
-      </node>
-    </node>
-    <node concept="DFgIl" id="1Tq8jHMypOW" role="2nsH0u">
-      <property role="DFgxK" value="11" />
-      <property role="DFgxQ" value="1" />
-      <property role="DFgxX" value="12" />
-      <node concept="1GbOPq" id="1Tq8jHMyr$F" role="1GbOP_">
-        <ref role="1GbOPp" node="1Tq8jHMyr$e" />
-      </node>
-      <node concept="1GbOPq" id="1Tq8jHMyr$8" role="1GbOP_">
-        <ref role="1GbOPp" node="1Tq8jHMyr$a" />
-      </node>
-    </node>
-    <node concept="DFgIl" id="1Tq8jHMyG4g" role="2nsH0u">
-      <property role="DFgxK" value="a" />
-      <property role="DFgxQ" value="21" />
-      <property role="DFgxX" value="22" />
-      <node concept="1GbOPq" id="1Tq8jHMyG4h" role="1GbOP_">
-        <ref role="1GbOPp" node="1Tq8jHMyr$a" />
       </node>
     </node>
   </node>
