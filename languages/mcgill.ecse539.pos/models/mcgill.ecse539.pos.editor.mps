@@ -20,6 +20,7 @@
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
+      <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
@@ -134,6 +135,9 @@
         <node concept="ljvvj" id="2M4XcqVYBnx" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+        <node concept="lj46D" id="39E$PTe$uCK" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0ifn" id="2M4XcqVYOmB" role="3EZMnx">
         <property role="3F0ifm" value="employees" />
@@ -147,6 +151,9 @@
         <node concept="pj6Ft" id="2M4XcqVYBnX" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+        <node concept="lj46D" id="39E$PTe$uCQ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0ifn" id="2M4XcqVYOnd" role="3EZMnx">
         <property role="3F0ifm" value="menu items" />
@@ -158,6 +165,25 @@
         <ref role="1NtTu8" to="cxe5:2M4XcqVXyjo" resolve="menuItems" />
         <node concept="l2Vlx" id="2M4XcqVYBou" role="2czzBx" />
         <node concept="pj6Ft" id="2M4XcqVYBoH" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="39E$PTe$uCT" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="39E$PTe$5Hc" role="3EZMnx">
+        <property role="3F0ifm" value="transaction types" />
+        <node concept="ljvvj" id="39E$PTe$5IQ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="39E$PTe$5Il" role="3EZMnx">
+        <ref role="1NtTu8" to="cxe5:39E$PTe$5FP" resolve="transactionTypes" />
+        <node concept="l2Vlx" id="39E$PTe$5In" role="2czzBx" />
+        <node concept="lj46D" id="39E$PTe$uCW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="39E$PTe$TB7" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -200,6 +226,12 @@
       <node concept="3F2HdR" id="2M4XcqVYsRU" role="3EZMnx">
         <ref role="1NtTu8" to="cxe5:2M4XcqVXyk_" resolve="inventoryItems" />
         <node concept="l2Vlx" id="2M4XcqVYsRW" role="2czzBx" />
+        <node concept="lj46D" id="39E$PTe$G7S" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="39E$PTe_76s" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="l2Vlx" id="2M4XcqVXysN" role="2iSdaV" />
       <node concept="pj6Ft" id="2M4XcqVYsRP" role="3F10Kt">
@@ -235,42 +267,6 @@
       <node concept="l2Vlx" id="2M4XcqVXysb" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="2JG9zk2giQM">
-    <ref role="1XX52x" to="cxe5:2JG9zk2giQx" resolve="OrderConcept" />
-    <node concept="3EZMnI" id="2M4XcqVXyrO" role="2wV5jI">
-      <node concept="3F0ifn" id="2M4XcqVXyrY" role="3EZMnx">
-        <property role="3F0ifm" value="order" />
-      </node>
-      <node concept="3F0A7n" id="2M4XcqVXys4" role="3EZMnx">
-        <ref role="1NtTu8" to="cxe5:2JG9zk2giRv" resolve="orderId" />
-      </node>
-      <node concept="l2Vlx" id="2M4XcqVXyrR" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="2JG9zk2giQO">
-    <ref role="1XX52x" to="cxe5:2JG9zk2giQ$" resolve="OrderItemConcept" />
-    <node concept="3EZMnI" id="2M4XcqVXyqZ" role="2wV5jI">
-      <node concept="3F0ifn" id="2M4XcqVXyr9" role="3EZMnx">
-        <property role="3F0ifm" value="orderItem" />
-      </node>
-      <node concept="3F0A7n" id="2M4XcqVYBm1" role="3EZMnx">
-        <ref role="1NtTu8" to="cxe5:2JG9zk2giS4" resolve="quantity" />
-      </node>
-      <node concept="l2Vlx" id="2M4XcqVXyr2" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="2JG9zk2giQQ">
-    <ref role="1XX52x" to="cxe5:2JG9zk2giQB" resolve="SalesConcept" />
-    <node concept="3EZMnI" id="2M4XcqVXyqB" role="2wV5jI">
-      <node concept="3F0ifn" id="2M4XcqVXyqL" role="3EZMnx">
-        <property role="3F0ifm" value="sale" />
-      </node>
-      <node concept="3F0A7n" id="2M4XcqVXyqV" role="3EZMnx">
-        <ref role="1NtTu8" to="cxe5:2M4XcqVXym4" resolve="salesDateTime" />
-      </node>
-      <node concept="l2Vlx" id="2M4XcqVXyqE" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="2JG9zk2giQS">
     <ref role="1XX52x" to="cxe5:2JG9zk2giQy" resolve="TableConcept" />
     <node concept="3EZMnI" id="2M4XcqVXypZ" role="2wV5jI">
@@ -281,18 +277,6 @@
         <ref role="1NtTu8" to="cxe5:2JG9zk2giRW" resolve="tableNumber" />
       </node>
       <node concept="l2Vlx" id="2M4XcqVXyq2" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="2JG9zk2giQU">
-    <ref role="1XX52x" to="cxe5:2JG9zk2giQA" resolve="TransactionConcept" />
-    <node concept="3EZMnI" id="2M4XcqVXypy" role="2wV5jI">
-      <node concept="3F0ifn" id="2M4XcqVXypG" role="3EZMnx">
-        <property role="3F0ifm" value="transaction" />
-      </node>
-      <node concept="3F0A7n" id="2M4XcqVXypQ" role="3EZMnx">
-        <ref role="1NtTu8" to="cxe5:2JG9zk2giSz" resolve="paymentAmount" />
-      </node>
-      <node concept="l2Vlx" id="2M4XcqVXyp_" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="2M4XcqVXykz">
@@ -345,6 +329,12 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="39E$PTe$5Fj">
+    <ref role="1XX52x" to="cxe5:39E$PTe$5Fg" resolve="TransactionTypeConcept" />
+    <node concept="3F0A7n" id="39E$PTe$5Fl" role="2wV5jI">
+      <ref role="1NtTu8" to="cxe5:39E$PTe$5Fh" resolve="name" />
     </node>
   </node>
 </model>

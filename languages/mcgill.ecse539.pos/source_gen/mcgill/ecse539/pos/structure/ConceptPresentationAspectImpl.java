@@ -18,9 +18,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_OrderConcept;
   private ConceptPresentation props_OrderItemConcept;
   private ConceptPresentation props_POS;
-  private ConceptPresentation props_SalesConcept;
   private ConceptPresentation props_TableConcept;
   private ConceptPresentation props_TransactionConcept;
+  private ConceptPresentation props_TransactionTypeConcept;
 
   @Override
   @Nullable
@@ -90,13 +90,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_POS = cpb.create();
         }
         return props_POS;
-      case LanguageConceptSwitch.SalesConcept:
-        if (props_SalesConcept == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da7L, 0x2c84f4c6bbf6257cL, "transaction", "", "");
-          props_SalesConcept = cpb.create();
-        }
-        return props_SalesConcept;
       case LanguageConceptSwitch.TableConcept:
         if (props_TableConcept == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -111,6 +104,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_TransactionConcept = cpb.create();
         }
         return props_TransactionConcept;
+      case LanguageConceptSwitch.TransactionTypeConcept:
+        if (props_TransactionTypeConcept == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("TransactionTypeConcept");
+          props_TransactionTypeConcept = cpb.create();
+        }
+        return props_TransactionTypeConcept;
     }
     return null;
   }

@@ -21,12 +21,25 @@
       <concept id="3164946647247564195" name="mcgill.ecse539.pos.structure.InventoryConcept" flags="ng" index="DFgIm">
         <child id="3207957968988808485" name="inventoryItems" index="2nsH7z" />
       </concept>
+      <concept id="3164946647247564194" name="mcgill.ecse539.pos.structure.TableConcept" flags="ng" index="DFgIn">
+        <property id="3164946647247564284" name="tableNumber" index="DFgJ9" />
+      </concept>
+      <concept id="3164946647247564200" name="mcgill.ecse539.pos.structure.EmployeeConcept" flags="ng" index="DFgIt">
+        <property id="3164946647247564344" name="employeeId" index="DFgwd" />
+        <property id="3164946647247564346" name="name" index="DFgwf" />
+      </concept>
       <concept id="3164946647247477339" name="mcgill.ecse539.pos.structure.POS" flags="ng" index="DOZLI">
         <child id="3207957968988808404" name="inventory" index="2nsH0i" />
+        <child id="3207957968988808401" name="employees" index="2nsH0n" />
         <child id="3207957968988808408" name="menuItems" index="2nsH0u" />
+        <child id="3207957968988808420" name="tables" index="2nsH0y" />
+        <child id="3632878082682018549" name="transactionTypes" index="1WYGAF" />
       </concept>
       <concept id="2187097108248882273" name="mcgill.ecse539.pos.structure.IngredientConcept" flags="ng" index="1GbOPq">
         <reference id="2187097108248882274" name="inventoryItem" index="1GbOPp" />
+      </concept>
+      <concept id="3632878082682018512" name="mcgill.ecse539.pos.structure.TransactionTypeConcept" flags="ng" index="1WYGAe">
+        <property id="3632878082682018513" name="name" index="1WYGAf" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -37,6 +50,28 @@
   </registry>
   <node concept="DOZLI" id="2JG9zk2giPI">
     <property role="TrG5h" value="Restaurant" />
+    <node concept="DFgIn" id="39E$PTe$uC6" role="2nsH0y">
+      <property role="DFgJ9" value="12" />
+    </node>
+    <node concept="DFgIn" id="39E$PTe$uC8" role="2nsH0y">
+      <property role="DFgJ9" value="13" />
+    </node>
+    <node concept="DFgIn" id="39E$PTe$uCb" role="2nsH0y">
+      <property role="DFgJ9" value="14" />
+    </node>
+    <node concept="1WYGAe" id="39E$PTe$uC2" role="1WYGAF">
+      <property role="1WYGAf" value="Credit" />
+    </node>
+    <node concept="1WYGAe" id="39E$PTe$uBZ" role="1WYGAF">
+      <property role="1WYGAf" value="Cash" />
+    </node>
+    <node concept="1WYGAe" id="39E$PTe$uBW" role="1WYGAF">
+      <property role="1WYGAf" value="Debit" />
+    </node>
+    <node concept="DFgIt" id="39E$PTe$0mG" role="2nsH0n">
+      <property role="DFgwf" value="aaa" />
+      <property role="DFgwd" value="11" />
+    </node>
     <node concept="DFgIl" id="1Tq8jHM$ZA_" role="2nsH0u">
       <property role="DFgxK" value="a" />
       <property role="DFgxX" value="12" />

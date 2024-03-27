@@ -91,19 +91,19 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2JG9zk2giQy" resolve="TableConcept" />
     </node>
-    <node concept="1TJgyj" id="2M4XcqVXyjF" role="1TKVEi">
-      <property role="IQ2ns" value="3207957968988808427" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="sales" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2JG9zk2giQB" resolve="SalesConcept" />
-    </node>
     <node concept="1TJgyj" id="2M4XcqVXyjN" role="1TKVEi">
       <property role="IQ2ns" value="3207957968988808435" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="transactions" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2JG9zk2giQA" resolve="TransactionConcept" />
+    </node>
+    <node concept="1TJgyj" id="39E$PTe$5FP" role="1TKVEi">
+      <property role="IQ2ns" value="3632878082682018549" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="transactionTypes" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="39E$PTe$5Fg" resolve="TransactionTypeConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="2JG9zk2giQw">
@@ -250,38 +250,22 @@
       <property role="TrG5h" value="transactionId" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="39E$PTe$5IW" role="1TKVEl">
+      <property role="IQ2nx" value="3632878082682018748" />
+      <property role="TrG5h" value="transactionDateTime" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="2M4XcqVXylI" role="1TKVEi">
       <property role="IQ2ns" value="3207957968988808558" />
       <property role="20kJfa" value="bill" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2JG9zk2giQ_" resolve="BillConcept" />
     </node>
-    <node concept="1TJgyj" id="2M4XcqVXylN" role="1TKVEi">
-      <property role="IQ2ns" value="3207957968988808563" />
-      <property role="20kJfa" value="sale" />
+    <node concept="1TJgyj" id="39E$PTe$5IS" role="1TKVEi">
+      <property role="IQ2ns" value="3632878082682018744" />
+      <property role="20kJfa" value="transactionType" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="2JG9zk2giQB" resolve="SalesConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2JG9zk2giQB">
-    <property role="EcuMT" value="3164946647247564199" />
-    <property role="TrG5h" value="SalesConcept" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="1TJgyi" id="2JG9zk2giSE" role="1TKVEl">
-      <property role="IQ2nx" value="3164946647247564330" />
-      <property role="TrG5h" value="totalSales" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyi" id="2M4XcqVXym4" role="1TKVEl">
-      <property role="IQ2nx" value="3207957968988808580" />
-      <property role="TrG5h" value="salesDateTime" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyj" id="2M4XcqVXylW" role="1TKVEi">
-      <property role="IQ2ns" value="3207957968988808572" />
-      <property role="20kJfa" value="transaction" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="2JG9zk2giQA" resolve="TransactionConcept" />
+      <ref role="20lvS9" node="39E$PTe$5Fg" resolve="TransactionTypeConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="2JG9zk2giQC">
@@ -328,6 +312,16 @@
       <property role="20kJfa" value="inventoryItem" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2M4XcqVXyky" resolve="InventoryItemConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="39E$PTe$5Fg">
+    <property role="EcuMT" value="3632878082682018512" />
+    <property role="TrG5h" value="TransactionTypeConcept" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="39E$PTe$5Fh" role="1TKVEl">
+      <property role="IQ2nx" value="3632878082682018513" />
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

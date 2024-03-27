@@ -73,6 +73,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.addEditorCell(createRefNodeList_1());
     editorCell.addEditorCell(createConstant_3());
     editorCell.addEditorCell(createRefNodeList_2());
+    editorCell.addEditorCell(createConstant_4());
+    editorCell.addEditorCell(createRefNodeList_3());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -179,6 +181,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     editorCell.getStyle().putAll(style);
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
@@ -265,6 +268,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setCellId("refNodeList_employees");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     editorCell.getStyle().putAll(style);
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
@@ -351,6 +355,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setCellId("refNodeList_menuItems");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     editorCell.getStyle().putAll(style);
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
@@ -422,6 +427,93 @@ import org.jetbrains.mps.openapi.language.SConcept;
       }
     }
   }
+  private EditorCell createConstant_4() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "transaction types");
+    editorCell.setCellId("Constant_vhhmgs_j0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createRefNodeList_3() {
+    AbstractCellListHandler handler = new transactionTypesListHandler_vhhmgs_k0(myNode, getEditorContext());
+    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
+    editorCell.setCellId("refNodeList_transactionTypes");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setSRole(handler.getElementSRole());
+    return editorCell;
+  }
+  private static class transactionTypesListHandler_vhhmgs_k0 extends RefNodeListHandler {
+    @NotNull
+    private SNode myNode;
+
+    public transactionTypesListHandler_vhhmgs_k0(SNode ownerNode, EditorContext context) {
+      super(context, false);
+      myNode = ownerNode;
+    }
+
+    @NotNull
+    public SNode getNode() {
+      return myNode;
+    }
+    public SContainmentLink getSLink() {
+      return LINKS.transactionTypes$y0nN;
+    }
+    public SAbstractConcept getChildSConcept() {
+      return CONCEPTS.TransactionTypeConcept$rT;
+    }
+
+    public EditorCell createNodeCell(SNode elementNode) {
+      EditorCell elementCell = getUpdateSession().updateChildNodeCell(elementNode);
+      installElementCellActions(elementNode, elementCell, false);
+      return elementCell;
+    }
+    public EditorCell createEmptyCell() {
+      getCellFactory().pushCellContext();
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(transactionTypesListHandler_vhhmgs_k0.this.getNode(), LINKS.transactionTypes$y0nN));
+      try {
+        EditorCell emptyCell = null;
+        emptyCell = super.createEmptyCell();
+        installElementCellActions(null, emptyCell, true);
+        setCellContext(emptyCell);
+        return emptyCell;
+      } finally {
+        getCellFactory().popCellContext();
+      }
+    }
+
+    private static final Object OBJ = new Object();
+
+    public void installElementCellActions(SNode elementNode, EditorCell elementCell, boolean isEmptyCell) {
+      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_COMPLETE_SET) == null) {
+        if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+          elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_COMPLETE_SET, OBJ);
+          elementCell.setSubstituteInfo((isEmptyCell ? new SEmptyContainmentSubstituteInfo(elementCell) : new SChildSubstituteInfo(elementCell)));
+        }
+      }
+      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_DELETE_SET) == null) {
+        if (elementNode != null) {
+          elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_DELETE_SET, OBJ);
+          elementCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.FORWARD));
+        }
+      }
+      if (elementCell.getUserObject(ELEMENT_CELL_BACKSPACE_SET) == null) {
+        if (elementNode != null) {
+          elementCell.putUserObject(ELEMENT_CELL_BACKSPACE_SET, OBJ);
+          elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
+        }
+      }
+      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
+        if (elementNode != null) {
+          elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, OBJ);
+        }
+      }
+    }
+  }
 
   private static final class PROPS {
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
@@ -432,6 +524,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     /*package*/ static final SConcept TableConcept$R1 = MetaAdapterFactory.getConcept(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da2L, "mcgill.ecse539.pos.structure.TableConcept");
     /*package*/ static final SConcept EmployeeConcept$Zr = MetaAdapterFactory.getConcept(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da8L, "mcgill.ecse539.pos.structure.EmployeeConcept");
     /*package*/ static final SConcept MenuItemConcept$Q3 = MetaAdapterFactory.getConcept(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da0L, "mcgill.ecse539.pos.structure.MenuItemConcept");
+    /*package*/ static final SConcept TransactionTypeConcept$rT = MetaAdapterFactory.getConcept(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x326a935e4e905ad0L, "mcgill.ecse539.pos.structure.TransactionTypeConcept");
   }
 
   private static final class LINKS {
@@ -439,5 +532,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
     /*package*/ static final SContainmentLink tables$O$Yo = MetaAdapterFactory.getContainmentLink(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec2635023fda5bL, 0x2c84f4c6bbf624e4L, "tables");
     /*package*/ static final SContainmentLink employees$OmEr = MetaAdapterFactory.getContainmentLink(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec2635023fda5bL, 0x2c84f4c6bbf624d1L, "employees");
     /*package*/ static final SContainmentLink menuItems$Oojy = MetaAdapterFactory.getContainmentLink(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec2635023fda5bL, 0x2c84f4c6bbf624d8L, "menuItems");
+    /*package*/ static final SContainmentLink transactionTypes$y0nN = MetaAdapterFactory.getContainmentLink(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec2635023fda5bL, 0x326a935e4e905af5L, "transactionTypes");
   }
 }

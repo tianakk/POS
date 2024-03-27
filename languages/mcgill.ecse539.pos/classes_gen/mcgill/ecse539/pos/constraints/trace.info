@@ -11,7 +11,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="13,0,29,0" name="mcgill.ecse539.pos.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,37,0" name="mcgill.ecse539.pos.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:b9416114-2562-4294-a2e8-823e81b85f4e(mcgill.ecse539.pos.constraints)/2187097108250409140">
@@ -64,6 +64,214 @@
       <unit id="2187097108250409140" at="52,0,56,0" name="mcgill.ecse539.pos.constraints.MenuItemConcept_Constraints$CONCEPTS" />
       <unit id="2187097108250409141" at="29,0,45,0" name="mcgill.ecse539.pos.constraints.MenuItemConcept_Constraints$Id_Property" />
       <unit id="2187097108250409140" at="24,0,65,0" name="mcgill.ecse539.pos.constraints.MenuItemConcept_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:b9416114-2562-4294-a2e8-823e81b85f4e(mcgill.ecse539.pos.constraints)/8371848013931585808">
+    <file name="EmployeeConcept_Constraints.java">
+      <node id="8371848013931585808" at="25,40,26,39" concept="8" />
+      <node id="8371848013931689988" at="30,65,31,66" concept="8" />
+      <node id="8371848013931689988" at="34,109,35,100" concept="4" />
+      <node id="8371848013931689988" at="36,53,37,159" concept="1" />
+      <node id="8371848013931689988" at="38,7,39,20" concept="5" />
+      <node id="8371848013931691047" at="41,88,42,275" concept="5" />
+      <node id="8371848013931585808" at="46,84,47,119" concept="4" />
+      <node id="8371848013931689988" at="47,119,48,73" concept="1" />
+      <node id="8371848013931585808" at="48,73,49,22" concept="5" />
+      <node id="8371848013931585808" at="53,0,54,0" concept="6" trace="EmployeeConcept$Zr" />
+      <node id="8371848013931585808" at="54,0,55,0" concept="6" trace="POS$hP" />
+      <node id="8371848013931585808" at="58,0,59,0" concept="6" trace="employeeId$XUlk" />
+      <node id="8371848013931585808" at="62,0,63,0" concept="6" trace="employees$OmEr" />
+      <node id="8371848013931585808" at="25,0,28,0" concept="0" trace="EmployeeConcept_Constraints#()V" />
+      <node id="8371848013931689988" at="30,0,33,0" concept="0" trace="EmployeeId_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="8371848013931689988" at="35,100,38,7" concept="2" />
+      <node id="8371848013931689988" at="41,0,44,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
+      <node id="8371848013931585808" at="45,0,51,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="8371848013931689988" at="33,0,41,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="8371848013931585808" at="25,40,26,39" />
+      <scope id="8371848013931689988" at="30,65,31,66" />
+      <scope id="8371848013931689988" at="36,53,37,159" />
+      <scope id="8371848013931690114" at="41,88,42,275" />
+      <scope id="8371848013931585808" at="25,0,28,0" />
+      <scope id="8371848013931689988" at="30,0,33,0">
+        <var name="container" id="8371848013931689988" />
+      </scope>
+      <scope id="8371848013931689988" at="41,0,44,0">
+        <var name="node" id="8371848013931689988" />
+        <var name="propertyValue" id="8371848013931689988" />
+      </scope>
+      <scope id="8371848013931585808" at="46,84,49,22">
+        <var name="properties" id="8371848013931585808" />
+      </scope>
+      <scope id="8371848013931689988" at="34,109,39,20">
+        <var name="result" id="8371848013931689988" />
+      </scope>
+      <scope id="8371848013931585808" at="45,0,51,0" />
+      <scope id="8371848013931689988" at="33,0,41,0">
+        <var name="checkingNodeContext" id="8371848013931689988" />
+        <var name="node" id="8371848013931689988" />
+        <var name="propertyValue" id="8371848013931689988" />
+      </scope>
+      <unit id="8371848013931585808" at="57,0,60,0" name="mcgill.ecse539.pos.constraints.EmployeeConcept_Constraints$PROPS" />
+      <unit id="8371848013931585808" at="61,0,64,0" name="mcgill.ecse539.pos.constraints.EmployeeConcept_Constraints$LINKS" />
+      <unit id="8371848013931585808" at="52,0,56,0" name="mcgill.ecse539.pos.constraints.EmployeeConcept_Constraints$CONCEPTS" />
+      <unit id="8371848013931689988" at="29,0,45,0" name="mcgill.ecse539.pos.constraints.EmployeeConcept_Constraints$EmployeeId_Property" />
+      <unit id="8371848013931585808" at="24,0,65,0" name="mcgill.ecse539.pos.constraints.EmployeeConcept_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:b9416114-2562-4294-a2e8-823e81b85f4e(mcgill.ecse539.pos.constraints)/8371848013931585809">
+    <file name="TableConcept_Constraints.java">
+      <node id="8371848013931585809" at="25,37,26,36" concept="8" />
+      <node id="8371848013931778636" at="30,66,31,67" concept="8" />
+      <node id="8371848013931778636" at="34,109,35,100" concept="4" />
+      <node id="8371848013931778636" at="36,53,37,159" concept="1" />
+      <node id="8371848013931778636" at="38,7,39,20" concept="5" />
+      <node id="8371848013931782176" at="41,88,42,273" concept="5" />
+      <node id="8371848013931585809" at="46,84,47,119" concept="4" />
+      <node id="8371848013931778636" at="47,119,48,75" concept="1" />
+      <node id="8371848013931585809" at="48,75,49,22" concept="5" />
+      <node id="8371848013931585809" at="53,0,54,0" concept="6" trace="TableConcept$R1" />
+      <node id="8371848013931585809" at="54,0,55,0" concept="6" trace="POS$hP" />
+      <node id="8371848013931585809" at="58,0,59,0" concept="6" trace="tableNumber$UKOP" />
+      <node id="8371848013931585809" at="62,0,63,0" concept="6" trace="tables$O$Yo" />
+      <node id="8371848013931585809" at="25,0,28,0" concept="0" trace="TableConcept_Constraints#()V" />
+      <node id="8371848013931778636" at="30,0,33,0" concept="0" trace="TableNumber_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="8371848013931778636" at="35,100,38,7" concept="2" />
+      <node id="8371848013931778636" at="41,0,44,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
+      <node id="8371848013931585809" at="45,0,51,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="8371848013931778636" at="33,0,41,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="8371848013931585809" at="25,37,26,36" />
+      <scope id="8371848013931778636" at="30,66,31,67" />
+      <scope id="8371848013931778636" at="36,53,37,159" />
+      <scope id="8371848013931781243" at="41,88,42,273" />
+      <scope id="8371848013931585809" at="25,0,28,0" />
+      <scope id="8371848013931778636" at="30,0,33,0">
+        <var name="container" id="8371848013931778636" />
+      </scope>
+      <scope id="8371848013931778636" at="41,0,44,0">
+        <var name="node" id="8371848013931778636" />
+        <var name="propertyValue" id="8371848013931778636" />
+      </scope>
+      <scope id="8371848013931585809" at="46,84,49,22">
+        <var name="properties" id="8371848013931585809" />
+      </scope>
+      <scope id="8371848013931778636" at="34,109,39,20">
+        <var name="result" id="8371848013931778636" />
+      </scope>
+      <scope id="8371848013931585809" at="45,0,51,0" />
+      <scope id="8371848013931778636" at="33,0,41,0">
+        <var name="checkingNodeContext" id="8371848013931778636" />
+        <var name="node" id="8371848013931778636" />
+        <var name="propertyValue" id="8371848013931778636" />
+      </scope>
+      <unit id="8371848013931585809" at="57,0,60,0" name="mcgill.ecse539.pos.constraints.TableConcept_Constraints$PROPS" />
+      <unit id="8371848013931585809" at="61,0,64,0" name="mcgill.ecse539.pos.constraints.TableConcept_Constraints$LINKS" />
+      <unit id="8371848013931585809" at="52,0,56,0" name="mcgill.ecse539.pos.constraints.TableConcept_Constraints$CONCEPTS" />
+      <unit id="8371848013931778636" at="29,0,45,0" name="mcgill.ecse539.pos.constraints.TableConcept_Constraints$TableNumber_Property" />
+      <unit id="8371848013931585809" at="24,0,65,0" name="mcgill.ecse539.pos.constraints.TableConcept_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:b9416114-2562-4294-a2e8-823e81b85f4e(mcgill.ecse539.pos.constraints)/8371848013931585810">
+    <file name="TransactionConcept_Constraints.java">
+      <node id="8371848013931585810" at="25,43,26,42" concept="8" />
+      <node id="8371848013931778761" at="30,68,31,69" concept="8" />
+      <node id="8371848013931778761" at="34,109,35,100" concept="4" />
+      <node id="8371848013931778761" at="36,53,37,159" concept="1" />
+      <node id="8371848013931778761" at="38,7,39,20" concept="5" />
+      <node id="8371848013931871228" at="41,88,42,281" concept="5" />
+      <node id="8371848013931585810" at="46,84,47,119" concept="4" />
+      <node id="8371848013931778761" at="47,119,48,79" concept="1" />
+      <node id="8371848013931585810" at="48,79,49,22" concept="5" />
+      <node id="8371848013931585810" at="53,0,54,0" concept="6" trace="TransactionConcept$SX" />
+      <node id="8371848013931585810" at="54,0,55,0" concept="6" trace="POS$hP" />
+      <node id="8371848013931585810" at="58,0,59,0" concept="6" trace="transactionId$pMs7" />
+      <node id="8371848013931585810" at="62,0,63,0" concept="6" trace="transactions$OHqW" />
+      <node id="8371848013931585810" at="25,0,28,0" concept="0" trace="TransactionConcept_Constraints#()V" />
+      <node id="8371848013931778761" at="30,0,33,0" concept="0" trace="TransactionId_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="8371848013931778761" at="35,100,38,7" concept="2" />
+      <node id="8371848013931778761" at="41,0,44,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
+      <node id="8371848013931585810" at="45,0,51,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="8371848013931778761" at="33,0,41,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="8371848013931585810" at="25,43,26,42" />
+      <scope id="8371848013931778761" at="30,68,31,69" />
+      <scope id="8371848013931778761" at="36,53,37,159" />
+      <scope id="8371848013931870295" at="41,88,42,281" />
+      <scope id="8371848013931585810" at="25,0,28,0" />
+      <scope id="8371848013931778761" at="30,0,33,0">
+        <var name="container" id="8371848013931778761" />
+      </scope>
+      <scope id="8371848013931778761" at="41,0,44,0">
+        <var name="node" id="8371848013931778761" />
+        <var name="propertyValue" id="8371848013931778761" />
+      </scope>
+      <scope id="8371848013931585810" at="46,84,49,22">
+        <var name="properties" id="8371848013931585810" />
+      </scope>
+      <scope id="8371848013931778761" at="34,109,39,20">
+        <var name="result" id="8371848013931778761" />
+      </scope>
+      <scope id="8371848013931585810" at="45,0,51,0" />
+      <scope id="8371848013931778761" at="33,0,41,0">
+        <var name="checkingNodeContext" id="8371848013931778761" />
+        <var name="node" id="8371848013931778761" />
+        <var name="propertyValue" id="8371848013931778761" />
+      </scope>
+      <unit id="8371848013931585810" at="57,0,60,0" name="mcgill.ecse539.pos.constraints.TransactionConcept_Constraints$PROPS" />
+      <unit id="8371848013931585810" at="61,0,64,0" name="mcgill.ecse539.pos.constraints.TransactionConcept_Constraints$LINKS" />
+      <unit id="8371848013931585810" at="52,0,56,0" name="mcgill.ecse539.pos.constraints.TransactionConcept_Constraints$CONCEPTS" />
+      <unit id="8371848013931778761" at="29,0,45,0" name="mcgill.ecse539.pos.constraints.TransactionConcept_Constraints$TransactionId_Property" />
+      <unit id="8371848013931585810" at="24,0,65,0" name="mcgill.ecse539.pos.constraints.TransactionConcept_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:b9416114-2562-4294-a2e8-823e81b85f4e(mcgill.ecse539.pos.constraints)/8371848013931585972">
+    <file name="OrderConcept_Constraints.java">
+      <node id="8371848013931585972" at="25,37,26,36" concept="8" />
+      <node id="8371848013931589765" at="30,62,31,63" concept="8" />
+      <node id="8371848013931589765" at="34,109,35,100" concept="4" />
+      <node id="8371848013931589765" at="36,53,37,159" concept="1" />
+      <node id="8371848013931589765" at="38,7,39,20" concept="5" />
+      <node id="8371848013931590865" at="41,88,42,269" concept="5" />
+      <node id="8371848013931585972" at="46,84,47,119" concept="4" />
+      <node id="8371848013931589765" at="47,119,48,67" concept="1" />
+      <node id="8371848013931585972" at="48,67,49,22" concept="5" />
+      <node id="8371848013931585972" at="53,0,54,0" concept="6" trace="OrderConcept$Qy" />
+      <node id="8371848013931585972" at="54,0,55,0" concept="6" trace="POS$hP" />
+      <node id="8371848013931585972" at="58,0,59,0" concept="6" trace="orderId$UreU" />
+      <node id="8371848013931585972" at="62,0,63,0" concept="6" trace="orders$OuCX" />
+      <node id="8371848013931585972" at="25,0,28,0" concept="0" trace="OrderConcept_Constraints#()V" />
+      <node id="8371848013931589765" at="30,0,33,0" concept="0" trace="OrderId_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="8371848013931589765" at="35,100,38,7" concept="2" />
+      <node id="8371848013931589765" at="41,0,44,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
+      <node id="8371848013931585972" at="45,0,51,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="8371848013931589765" at="33,0,41,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="8371848013931585972" at="25,37,26,36" />
+      <scope id="8371848013931589765" at="30,62,31,63" />
+      <scope id="8371848013931589765" at="36,53,37,159" />
+      <scope id="8371848013931589891" at="41,88,42,269" />
+      <scope id="8371848013931585972" at="25,0,28,0" />
+      <scope id="8371848013931589765" at="30,0,33,0">
+        <var name="container" id="8371848013931589765" />
+      </scope>
+      <scope id="8371848013931589765" at="41,0,44,0">
+        <var name="node" id="8371848013931589765" />
+        <var name="propertyValue" id="8371848013931589765" />
+      </scope>
+      <scope id="8371848013931585972" at="46,84,49,22">
+        <var name="properties" id="8371848013931585972" />
+      </scope>
+      <scope id="8371848013931589765" at="34,109,39,20">
+        <var name="result" id="8371848013931589765" />
+      </scope>
+      <scope id="8371848013931585972" at="45,0,51,0" />
+      <scope id="8371848013931589765" at="33,0,41,0">
+        <var name="checkingNodeContext" id="8371848013931589765" />
+        <var name="node" id="8371848013931589765" />
+        <var name="propertyValue" id="8371848013931589765" />
+      </scope>
+      <unit id="8371848013931585972" at="57,0,60,0" name="mcgill.ecse539.pos.constraints.OrderConcept_Constraints$PROPS" />
+      <unit id="8371848013931585972" at="61,0,64,0" name="mcgill.ecse539.pos.constraints.OrderConcept_Constraints$LINKS" />
+      <unit id="8371848013931585972" at="52,0,56,0" name="mcgill.ecse539.pos.constraints.OrderConcept_Constraints$CONCEPTS" />
+      <unit id="8371848013931589765" at="29,0,45,0" name="mcgill.ecse539.pos.constraints.OrderConcept_Constraints$OrderId_Property" />
+      <unit id="8371848013931585972" at="24,0,65,0" name="mcgill.ecse539.pos.constraints.OrderConcept_Constraints" />
     </file>
   </root>
 </debug-info>

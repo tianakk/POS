@@ -18,9 +18,9 @@ public final class LanguageConceptSwitch {
   public static final int OrderConcept = 6;
   public static final int OrderItemConcept = 7;
   public static final int POS = 8;
-  public static final int SalesConcept = 9;
-  public static final int TableConcept = 10;
-  public static final int TransactionConcept = 11;
+  public static final int TableConcept = 9;
+  public static final int TransactionConcept = 10;
+  public static final int TransactionTypeConcept = 11;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL);
@@ -33,9 +33,9 @@ public final class LanguageConceptSwitch {
     builder.put(0x2bec263502412da1L, OrderConcept);
     builder.put(0x2bec263502412da4L, OrderItemConcept);
     builder.put(0x2bec2635023fda5bL, POS);
-    builder.put(0x2bec263502412da7L, SalesConcept);
     builder.put(0x2bec263502412da2L, TableConcept);
     builder.put(0x2bec263502412da6L, TransactionConcept);
+    builder.put(0x326a935e4e905ad0L, TransactionTypeConcept);
     myIndex = builder.seal();
   }
 
