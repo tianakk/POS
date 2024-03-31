@@ -19,18 +19,18 @@ public class ConstraintsAspectDescriptor extends BaseConstraintsAspectDescriptor
     SAbstractConcept cncpt = concept;
     switch (conceptIndex.index(cncpt)) {
       case 0:
-        return new EmployeeConcept_Constraints();
+        return new BillTransactionConcept_Constraints();
       case 1:
-        return new MenuItemConcept_Constraints();
+        return new EmployeeConcept_Constraints();
       case 2:
-        return new OrderConcept_Constraints();
+        return new MenuItemConcept_Constraints();
       case 3:
-        return new TableConcept_Constraints();
+        return new OrderConcept_Constraints();
       case 4:
-        return new TransactionConcept_Constraints();
+        return new TableConcept_Constraints();
       default:
     }
     return new BaseConstraintsDescriptor(concept);
   }
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da8L), MetaIdFactory.conceptId(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da0L), MetaIdFactory.conceptId(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da1L), MetaIdFactory.conceptId(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da2L), MetaIdFactory.conceptId(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da6L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da6L), MetaIdFactory.conceptId(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da8L), MetaIdFactory.conceptId(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da0L), MetaIdFactory.conceptId(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da1L), MetaIdFactory.conceptId(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da2L)).seal();
 }

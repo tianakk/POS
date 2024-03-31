@@ -14,7 +14,7 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  /*package*/ final ConceptDescriptor myConceptBillConcept = createDescriptorForBillConcept();
+  /*package*/ final ConceptDescriptor myConceptBillTransactionConcept = createDescriptorForBillTransactionConcept();
   /*package*/ final ConceptDescriptor myConceptEmployeeConcept = createDescriptorForEmployeeConcept();
   /*package*/ final ConceptDescriptor myConceptIngredientConcept = createDescriptorForIngredientConcept();
   /*package*/ final ConceptDescriptor myConceptInventoryConcept = createDescriptorForInventoryConcept();
@@ -24,7 +24,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptOrderItemConcept = createDescriptorForOrderItemConcept();
   /*package*/ final ConceptDescriptor myConceptPOS = createDescriptorForPOS();
   /*package*/ final ConceptDescriptor myConceptTableConcept = createDescriptorForTableConcept();
-  /*package*/ final ConceptDescriptor myConceptTransactionConcept = createDescriptorForTransactionConcept();
   /*package*/ final ConceptDescriptor myConceptTransactionTypeConcept = createDescriptorForTransactionTypeConcept();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -40,15 +39,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBillConcept, myConceptEmployeeConcept, myConceptIngredientConcept, myConceptInventoryConcept, myConceptInventoryItemConcept, myConceptMenuItemConcept, myConceptOrderConcept, myConceptOrderItemConcept, myConceptPOS, myConceptTableConcept, myConceptTransactionConcept, myConceptTransactionTypeConcept);
+    return Arrays.asList(myConceptBillTransactionConcept, myConceptEmployeeConcept, myConceptIngredientConcept, myConceptInventoryConcept, myConceptInventoryItemConcept, myConceptMenuItemConcept, myConceptOrderConcept, myConceptOrderItemConcept, myConceptPOS, myConceptTableConcept, myConceptTransactionTypeConcept);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
-      case LanguageConceptSwitch.BillConcept:
-        return myConceptBillConcept;
+      case LanguageConceptSwitch.BillTransactionConcept:
+        return myConceptBillTransactionConcept;
       case LanguageConceptSwitch.EmployeeConcept:
         return myConceptEmployeeConcept;
       case LanguageConceptSwitch.IngredientConcept:
@@ -67,8 +66,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptPOS;
       case LanguageConceptSwitch.TableConcept:
         return myConceptTableConcept;
-      case LanguageConceptSwitch.TransactionConcept:
-        return myConceptTransactionConcept;
       case LanguageConceptSwitch.TransactionTypeConcept:
         return myConceptTransactionTypeConcept;
       default:
@@ -81,14 +78,19 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
-  private static ConceptDescriptor createDescriptorForBillConcept() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("mcgill.ecse539.pos", "BillConcept", 0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da5L);
+  private static ConceptDescriptor createDescriptorForBillTransactionConcept() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("mcgill.ecse539.pos", "BillTransactionConcept", 0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da6L);
     b.class_(false, false, false);
-    b.origin("r:edde5c6d-59a6-4f21-aecc-a80aa141374b(mcgill.ecse539.pos.structure)/3164946647247564197");
+    b.origin("r:edde5c6d-59a6-4f21-aecc-a80aa141374b(mcgill.ecse539.pos.structure)/3164946647247564198");
     b.version(3);
-    b.property("totalAmount", 0x2bec263502412e16L).type(PrimitiveTypeId.INTEGER).origin("3164946647247564310").done();
-    b.associate("order", 0x2c84f4c6bbf6254bL).target(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da1L).optional(false).origin("3207957968988808523").done();
-    b.associate("transaction", 0x2c84f4c6bbf62570L).target(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da6L).optional(false).origin("3207957968988808560").done();
+    b.property("paymentAmount", 0x2bec263502412e23L).type(PrimitiveTypeId.INTEGER).origin("3164946647247564323").done();
+    b.property("paymentStatus", 0x2bec263502412e25L).type(PrimitiveTypeId.BOOLEAN).origin("3164946647247564325").done();
+    b.property("transactionId", 0x742ec769a7f36b62L).type(PrimitiveTypeId.INTEGER).origin("8371848013931572066").done();
+    b.property("year", 0xb2ca93d8be868deL).type(PrimitiveTypeId.INTEGER).origin("805204515197839582").done();
+    b.property("month", 0xb2ca93d8be868e3L).type(PrimitiveTypeId.INTEGER).origin("805204515197839587").done();
+    b.property("day", 0xb2ca93d8be868e9L).type(PrimitiveTypeId.INTEGER).origin("805204515197839593").done();
+    b.associate("order", 0x2c84f4c6bbf6256eL).target(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da1L).optional(false).origin("3207957968988808558").done();
+    b.associate("transactionType", 0x326a935e4e905bb8L).target(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x326a935e4e905ad0L).optional(false).origin("3632878082682018744").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForEmployeeConcept() {
@@ -142,9 +144,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:edde5c6d-59a6-4f21-aecc-a80aa141374b(mcgill.ecse539.pos.structure)/3164946647247564193");
     b.version(3);
-    b.property("orderId", 0x2bec263502412ddfL).type(PrimitiveTypeId.INTEGER).origin("3164946647247564255").done();
+    b.property("orderId", 0x2bec263502412ddfL).type(PrimitiveTypeId.STRING).origin("3164946647247564255").done();
     b.associate("table", 0x2bec263502412df5L).target(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da2L).optional(true).origin("3164946647247564277").done();
-    b.associate("bill", 0x2c84f4c6bbf6255bL).target(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da5L).optional(false).origin("3207957968988808539").done();
     b.aggregate("orderItem", 0x2bec263502412defL).target(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da4L).optional(true).ordered(true).multiple(true).origin("3164946647247564271").done();
     return b.create();
   }
@@ -164,7 +165,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:edde5c6d-59a6-4f21-aecc-a80aa141374b(mcgill.ecse539.pos.structure)/3164946647247477339");
     b.version(3);
-    b.aggregate("bills", 0x2c84f4c6bbf624cfL).target(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da5L).optional(true).ordered(true).multiple(true).origin("3207957968988808399").done();
     b.aggregate("employees", 0x2c84f4c6bbf624d1L).target(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da8L).optional(true).ordered(true).multiple(true).origin("3207957968988808401").done();
     b.aggregate("inventory", 0x2c84f4c6bbf624d4L).target(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da3L).optional(false).ordered(true).multiple(false).origin("3207957968988808404").done();
     b.aggregate("menuItems", 0x2c84f4c6bbf624d8L).target(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da0L).optional(true).ordered(true).multiple(true).origin("3207957968988808408").done();
@@ -181,19 +181,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.property("tableNumber", 0x2bec263502412dfcL).type(PrimitiveTypeId.INTEGER).origin("3164946647247564284").done();
     b.associate("currOrder", 0x2c84f4c6bbf62587L).target(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da1L).optional(true).origin("3207957968988808583").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForTransactionConcept() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("mcgill.ecse539.pos", "TransactionConcept", 0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da6L);
-    b.class_(false, false, false);
-    b.origin("r:edde5c6d-59a6-4f21-aecc-a80aa141374b(mcgill.ecse539.pos.structure)/3164946647247564198");
-    b.version(3);
-    b.property("paymentAmount", 0x2bec263502412e23L).type(PrimitiveTypeId.INTEGER).origin("3164946647247564323").done();
-    b.property("paymentStatus", 0x2bec263502412e25L).type(PrimitiveTypeId.BOOLEAN).origin("3164946647247564325").done();
-    b.property("transactionId", 0x742ec769a7f36b62L).type(PrimitiveTypeId.INTEGER).origin("8371848013931572066").done();
-    b.property("transactionDateTime", 0x326a935e4e905bbcL).type(PrimitiveTypeId.STRING).origin("3632878082682018748").done();
-    b.associate("bill", 0x2c84f4c6bbf6256eL).target(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da5L).optional(false).origin("3207957968988808558").done();
-    b.associate("transactionType", 0x326a935e4e905bb8L).target(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x326a935e4e905ad0L).optional(false).origin("3632878082682018744").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTransactionTypeConcept() {

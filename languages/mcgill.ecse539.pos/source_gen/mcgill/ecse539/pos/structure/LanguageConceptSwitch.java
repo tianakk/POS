@@ -9,7 +9,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int BillConcept = 0;
+  public static final int BillTransactionConcept = 0;
   public static final int EmployeeConcept = 1;
   public static final int IngredientConcept = 2;
   public static final int InventoryConcept = 3;
@@ -19,12 +19,11 @@ public final class LanguageConceptSwitch {
   public static final int OrderItemConcept = 7;
   public static final int POS = 8;
   public static final int TableConcept = 9;
-  public static final int TransactionConcept = 10;
-  public static final int TransactionTypeConcept = 11;
+  public static final int TransactionTypeConcept = 10;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL);
-    builder.put(0x2bec263502412da5L, BillConcept);
+    builder.put(0x2bec263502412da6L, BillTransactionConcept);
     builder.put(0x2bec263502412da8L, EmployeeConcept);
     builder.put(0x1e5a213b72756c61L, IngredientConcept);
     builder.put(0x2bec263502412da3L, InventoryConcept);
@@ -34,7 +33,6 @@ public final class LanguageConceptSwitch {
     builder.put(0x2bec263502412da4L, OrderItemConcept);
     builder.put(0x2bec2635023fda5bL, POS);
     builder.put(0x2bec263502412da2L, TableConcept);
-    builder.put(0x2bec263502412da6L, TransactionConcept);
     builder.put(0x326a935e4e905ad0L, TransactionTypeConcept);
     myIndex = builder.seal();
   }

@@ -9,7 +9,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private ConceptPresentation props_BillConcept;
+  private ConceptPresentation props_BillTransactionConcept;
   private ConceptPresentation props_EmployeeConcept;
   private ConceptPresentation props_IngredientConcept;
   private ConceptPresentation props_InventoryConcept;
@@ -19,7 +19,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_OrderItemConcept;
   private ConceptPresentation props_POS;
   private ConceptPresentation props_TableConcept;
-  private ConceptPresentation props_TransactionConcept;
   private ConceptPresentation props_TransactionTypeConcept;
 
   @Override
@@ -27,13 +26,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case LanguageConceptSwitch.BillConcept:
-        if (props_BillConcept == null) {
+      case LanguageConceptSwitch.BillTransactionConcept:
+        if (props_BillTransactionConcept == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("BillConcept");
-          props_BillConcept = cpb.create();
+          cpb.rawPresentation("BillTransactionConcept");
+          props_BillTransactionConcept = cpb.create();
         }
-        return props_BillConcept;
+        return props_BillTransactionConcept;
       case LanguageConceptSwitch.EmployeeConcept:
         if (props_EmployeeConcept == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -97,13 +96,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_TableConcept = cpb.create();
         }
         return props_TableConcept;
-      case LanguageConceptSwitch.TransactionConcept:
-        if (props_TransactionConcept == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("TransactionConcept");
-          props_TransactionConcept = cpb.create();
-        }
-        return props_TransactionConcept;
       case LanguageConceptSwitch.TransactionTypeConcept:
         if (props_TransactionTypeConcept == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

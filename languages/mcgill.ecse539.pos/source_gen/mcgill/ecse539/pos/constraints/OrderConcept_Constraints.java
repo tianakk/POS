@@ -32,14 +32,14 @@ public class OrderConcept_Constraints extends BaseConstraintsDescriptor {
     }
     @Override
     public boolean validateValue(SNode node, Object propertyValue, CheckingNodeContext checkingNodeContext) {
-      boolean result = staticValidateProperty(node, SPropertyOperations.castInteger(propertyValue));
+      boolean result = staticValidateProperty(node, SPropertyOperations.castString(propertyValue));
       if (!(result) && checkingNodeContext != null) {
         checkingNodeContext.setBreakingNode(new SNodePointer("r:b9416114-2562-4294-a2e8-823e81b85f4e(mcgill.ecse539.pos.constraints)", "8371848013931589890"));
       }
       return result;
     }
-    private static boolean staticValidateProperty(SNode node, final int propertyValue) {
-      return ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.POS$hP), LINKS.orders$OuCX)).where((it) -> Objects.equals(SPropertyOperations.getInteger(it, PROPS.orderId$UreU), propertyValue)).count() <= 1;
+    private static boolean staticValidateProperty(SNode node, final String propertyValue) {
+      return ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.POS$hP), LINKS.orders$OuCX)).where((it) -> Objects.equals(SPropertyOperations.getString(it, PROPS.orderId$UreU), propertyValue)).count() <= 1;
     }
   }
   @Override
