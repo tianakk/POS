@@ -4,4 +4,11 @@ package mcgill.ecse539.pos.sandbox;
 
 
 public class OrderItemConceptImpl {
+  private int quantity;
+  private MenuItemImpl menuItem;
+
+  public OrderItemConceptImpl(int quantity, MenuItemImpl menu) {
+    this.quantity = quantity;
+    this.menuItem = menu;
+  }
 }

@@ -16,4 +16,16 @@ public class EmployeeImpl {
   public int getId() {
     return employeeId;
   }
+
+  public String getName() {
+    return name;
+  }
+
+  public TableImpl getTable() {
+    return table;
+  }
+
+  public void setTable(TableImpl table) {
+    this.table = table;
+  }
 }

@@ -184,11 +184,6 @@
       <property role="TrG5h" value="quantity" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyi" id="2JG9zk2giS6" role="1TKVEl">
-      <property role="IQ2nx" value="3164946647247564294" />
-      <property role="TrG5h" value="subtotal" />
-      <ref role="AX2Wp" to="tpee:4_5hYVHKxAU" resolve="_FloatNumberValue" />
-    </node>
     <node concept="1TJgyj" id="2JG9zk2giSh" role="1TKVEi">
       <property role="IQ2ns" value="3164946647247564305" />
       <property role="20kJfa" value="menuItem" />

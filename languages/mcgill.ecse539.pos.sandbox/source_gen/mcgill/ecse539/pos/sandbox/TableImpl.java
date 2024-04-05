@@ -5,6 +5,7 @@ package mcgill.ecse539.pos.sandbox;
 
 public class TableImpl {
   private int tableNumber;
+  private boolean busy = false;
 
   public TableImpl(int tableNumber) {
     this.tableNumber = tableNumber;
@@ -12,5 +13,13 @@ public class TableImpl {
 
   public int getNumber() {
     return tableNumber;
+  }
+
+  public boolean getBusy() {
+    return busy;
+  }
+
+  public void setBusy(boolean busy) {
+    this.busy = busy;
   }
 }

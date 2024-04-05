@@ -4,16 +4,114 @@ package mcgill.ecse539.pos.sandbox;
 
 import java.util.HashMap;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class POSImpl {
   private HashMap<Integer, EmployeeImpl> employees = new HashMap<>();
   private HashMap<Integer, TableImpl> tables = new HashMap<>();
+  private HashMap<String, OrderImpl> orders = new HashMap<>();
+  private HashMap<Integer, BillImpl> bills = new HashMap<>();
+  private HashMap<Integer, MenuItemImpl> menuItems = new HashMap<>();
   private InventoryImpl inventory;
 
   public enum TransactionType {
     Credit(),
     Cash(),
     Debit()
+  }
+
+  public static void wrongNumber() {
+    System.out.println("Wrong number of args");
+  }
+
+  public static void wrongFormat() {
+    System.out.println("Wrong format");
+  }
+
+  public void printTables() {
+    for (Integer key : tables.keySet()) {
+      System.out.println(tables.get(key).getNumber() + " " + tables.get(key).getBusy());
+    }
+  }
+
+  public void createTable(String tableNumber) {
+    int number;
+    try {
+      number = Integer.parseInt(tableNumber);
+    } catch (Exception e) {
+      wrongFormat();
+      return;
+    }
+    if (tables.keySet().contains(number)) {
+      System.out.println("Table number already exists");
+    } else {
+      TableImpl table = new TableImpl(number);
+      tables.put(number, table);
+    }
+  }
+
+  public void deleteTable(String tableNumber) {
+    int number;
+    try {
+      number = Integer.parseInt(tableNumber);
+    } catch (Exception e) {
+      wrongFormat();
+      return;
+    }
+    if (tables.keySet().contains(number)) {
+      tables.remove(number);
+    } else {
+      System.out.println("Table doesn't exist");
+    }
+  }
+
+  public void setTableStatus(String tableNumber, String newStatus) {
+    int number;
+    boolean status;
+    try {
+      number = Integer.parseInt(tableNumber);
+      status = Boolean.parseBoolean(newStatus);
+    } catch (Exception e) {
+      wrongFormat();
+      return;
+    }
+    if (tables.keySet().contains(number)) {
+      tables.get(number).setBusy(status);
+    } else {
+      System.out.println("Table doesn't exist");
+    }
+  }
+
+  public void assignEmployeeTable(String employee, String tableNumber) {
+    int id;
+    int number;
+    try {
+      number = Integer.parseInt(tableNumber);
+      id = Integer.parseInt(employee);
+    } catch (Exception e) {
+      wrongFormat();
+      return;
+    }
+    if (employees.keySet().contains(id) && tables.keySet().contains(number)) {
+      employees.get(id).setTable(tables.get(number));
+    } else {
+      System.out.println("Table or Employee doesn't exist");
+    }
+  }
+
+  public void removeEmployeeTable(String employee) {
+    int id;
+    try {
+      id = Integer.parseInt(employee);
+    } catch (Exception e) {
+      wrongFormat();
+      return;
+    }
+    if (employees.keySet().contains(id)) {
+      employees.get(id).setTable(null);
+    } else {
+      System.out.println("Employee doesn't exist");
+    }
   }
 
   public static void main(String[] args) {
@@ -39,10 +137,76 @@ public class POSImpl {
     pos.inventory.createItem("vinum", 12);
     pos.inventory.createItem("pork", 3000);
 
+    ArrayList<InventoryItemImpl> ingredientsList_a = new ArrayList<>();
+    ArrayList<InventoryItemImpl> ingredientsList_b = new ArrayList<>();
+    ArrayList<InventoryItemImpl> ingredientsList_c = new ArrayList<>();
+    ingredientsList_a.add(pos.inventory.getInventoryItem("posca"));
+    ingredientsList_a.add(pos.inventory.getInventoryItem("asofoetida"));
+    ingredientsList_a.add(pos.inventory.getInventoryItem("pork"));
+    ingredientsList_b.add(pos.inventory.getInventoryItem("asofoetida"));
+    ingredientsList_c.add(pos.inventory.getInventoryItem("garum"));
+    MenuItemImpl menuItem_a = new MenuItemImpl(1, 12, "ofella", ingredientsList_a);
+    MenuItemImpl menuItem_b = new MenuItemImpl(12, 22, "fritatta", ingredientsList_b);
+    MenuItemImpl menuItem_c = new MenuItemImpl(123, 1, "puls", ingredientsList_c);
+    pos.menuItems.put(menuItem_a.getId(), menuItem_a);
+    pos.menuItems.put(menuItem_b.getId(), menuItem_b);
+    pos.menuItems.put(menuItem_c.getId(), menuItem_c);
+
+    ArrayList<OrderItemConceptImpl> orderItemsList_a = new ArrayList<>();
+    ArrayList<OrderItemConceptImpl> orderItemsList_b = new ArrayList<>();
+    OrderItemConceptImpl orderItem_a0 = new OrderItemConceptImpl(13, pos.menuItems.get(12));
+    OrderItemConceptImpl orderItem_b0 = new OrderItemConceptImpl(12, pos.menuItems.get(1));
+    OrderItemConceptImpl orderItem_a1 = new OrderItemConceptImpl(12, pos.menuItems.get(12));
+    orderItemsList_a.add(orderItem_a0);
+    orderItemsList_a.add(orderItem_b0);
+    orderItemsList_b.add(orderItem_a1);
+    OrderImpl order_a = new OrderImpl("12", orderItemsList_a);
+    OrderImpl order_b = new OrderImpl("11", orderItemsList_b);
+    pos.orders.put(order_a.getId(), order_a);
+    pos.orders.put(order_b.getId(), order_b);
+
+    BillImpl bill_a = new BillImpl(12, false, 13, 2001, 12, 12, TransactionType.valueOf("Debit"), pos.orders.get("12"));
+    pos.bills.put(bill_a.getId(), bill_a);
+
     System.out.println("POS started, input q to quit");
 
     String scan = scanner.nextLine();
     while (!(scan.equals("q"))) {
+      String[] inputArr = scan.split(" ");
+      if (inputArr[0].equals("tables")) {
+        pos.printTables();
+      } else if (inputArr[0].equals("createTable")) {
+        if (inputArr.length == 2) {
+          pos.createTable(inputArr[1]);
+        } else {
+          wrongNumber();
+        }
+      } else if (inputArr[0].equals("deleteTable")) {
+        if (inputArr.length == 2) {
+          pos.deleteTable(inputArr[1]);
+        } else {
+          wrongNumber();
+        }
+      } else if (inputArr[0].equals("setTableStatus")) {
+        if (inputArr.length == 3) {
+          pos.setTableStatus(inputArr[1], inputArr[2]);
+        } else {
+          wrongNumber();
+        }
+      } else if (inputArr[0].equals("assignEmployeeTable")) {
+        if (inputArr.length == 3) {
+          pos.assignEmployeeTable(inputArr[1], inputArr[2]);
+        } else {
+          wrongNumber();
+        }
+      } else if (inputArr[0].equals("removeEmployeeTable")) {
+        if (inputArr.length == 2) {
+          pos.removeEmployeeTable(inputArr[1]);
+        } else {
+          wrongNumber();
+        }
+      }
+
       scan = scanner.nextLine();
     }
   }

@@ -11,7 +11,6 @@ import jetbrains.mps.smodel.adapter.ids.SConceptId;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
-import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptBillTransactionConcept = createDescriptorForBillTransactionConcept();
@@ -155,7 +154,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:edde5c6d-59a6-4f21-aecc-a80aa141374b(mcgill.ecse539.pos.structure)/3164946647247564196");
     b.version(3);
     b.property("quantity", 0x2bec263502412e04L).type(PrimitiveTypeId.INTEGER).origin("3164946647247564292").done();
-    b.property("subtotal", 0x2bec263502412e06L).type(MetaIdFactory.dataTypeId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x494547eeedc219baL)).origin("3164946647247564294").done();
     b.associate("menuItem", 0x2bec263502412e11L).target(0x7d3ecb5c844f43f0L, 0x98db2b52b269987bL, 0x2bec263502412da0L).optional(false).origin("3164946647247564305").done();
     return b.create();
   }

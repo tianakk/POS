@@ -20,4 +20,8 @@ public class InventoryImpl {
       inventoryItemImpl.setQuantity(newQuantity);
     }
   }
+
+  public InventoryItemImpl getInventoryItem(String name) {
+    return inventory.get(name);
+  }
 }

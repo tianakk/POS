@@ -19,4 +19,8 @@ public class BillImpl {
     this.date.set(year, month, day);
     this.order = orderImpl;
   }
+
+  public int getId() {
+    return transactionId;
+  }
 }
