@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/POS.iml" filepath="$PROJECT_DIR$/.idea/POS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/languages/mcgill.ecse539.pos/generator/generator.iml" filepath="$PROJECT_DIR$/languages/mcgill.ecse539.pos/generator/generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/languages/mcgill.ecse539.pos/mcgill.ecse539.pos.iml" filepath="$PROJECT_DIR$/languages/mcgill.ecse539.pos/mcgill.ecse539.pos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/languages/mcgill.ecse539.pos.sandbox/mcgill.ecse539.pos.sandbox.iml" filepath="$PROJECT_DIR$/languages/mcgill.ecse539.pos.sandbox/mcgill.ecse539.pos.sandbox.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1076505808687:jetbrains.mps.baseLanguage.structure.WhileStatement" />
+  <root>
+    <file name="BillImpl.java">
+      <unit at="7,0,23,0" name="mcgill.ecse539.pos.sandbox.BillImpl" />
+    </file>
+    <file name="EmployeeImpl.java">
+      <unit at="6,0,20,0" name="mcgill.ecse539.pos.sandbox.EmployeeImpl" />
+    </file>
+    <file name="InventoryImpl.java">
+      <unit at="7,0,24,0" name="mcgill.ecse539.pos.sandbox.InventoryImpl" />
+    </file>
+    <file name="InventoryItemImpl.java">
+      <unit at="6,0,27,0" name="mcgill.ecse539.pos.sandbox.InventoryItemImpl" />
+    </file>
+    <file name="MenuItemImpl.java">
+      <unit at="6,0,8,0" name="mcgill.ecse539.pos.sandbox.MenuItemImpl" />
+    </file>
+    <file name="OrderImpl.java">
+      <unit at="6,0,8,0" name="mcgill.ecse539.pos.sandbox.OrderImpl" />
+    </file>
+    <file name="OrderItemConceptImpl.java">
+      <unit at="6,0,8,0" name="mcgill.ecse539.pos.sandbox.OrderItemConceptImpl" />
+    </file>
+    <file name="TableImpl.java">
+      <unit at="6,0,17,0" name="mcgill.ecse539.pos.sandbox.TableImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:1495e202-7789-4dce-8afd-1573044c24ca(mcgill.ecse539.pos.sandbox)/3164946647247564142">
+    <file name="POSImpl.java">
+      <node id="3164946647247564142" at="9,0,10,0" concept="1" trace="employees" />
+      <node id="3164946647247564142" at="10,0,11,0" concept="1" trace="tables" />
+      <node id="3164946647247564142" at="11,0,12,0" concept="1" trace="inventory" />
+      <node id="3164946647247564142" at="19,42,20,45" concept="2" />
+      <node id="3164946647247564142" at="20,45,21,32" concept="2" />
+      <node id="3164946647247564142" at="21,32,22,0" concept="4" />
+      <node id="3164946647247564142" at="22,0,23,12" concept="3" />
+      <node id="3632878082681996716" at="23,12,24,58" concept="2" />
+      <node id="3632878082681996716" at="24,58,25,54" concept="0" />
+      <node id="3164946647247564142" at="25,54,26,0" concept="4" />
+      <node id="3632878082682120710" at="26,0,27,42" concept="2" />
+      <node id="3632878082682120712" at="27,42,28,42" concept="2" />
+      <node id="3632878082682120715" at="28,42,29,42" concept="2" />
+      <node id="3632878082682120710" at="29,42,30,49" concept="0" />
+      <node id="3632878082682120712" at="30,49,31,49" concept="0" />
+      <node id="3632878082682120715" at="31,49,32,49" concept="0" />
+      <node id="3164946647247564142" at="32,49,33,0" concept="4" />
+      <node id="3164946647247564142" at="33,0,34,40" concept="0" />
+      <node id="2187097108248814377" at="34,40,35,42" concept="0" />
+      <node id="2187097108250212618" at="35,42,36,48" concept="0" />
+      <node id="2187097108250212627" at="36,48,37,45" concept="0" />
+      <node id="2187097108250212622" at="37,45,38,45" concept="0" />
+      <node id="2187097108248814390" at="38,45,39,42" concept="0" />
+      <node id="805204515199786853" at="39,42,40,43" concept="0" />
+      <node id="3164946647247564142" at="40,43,41,0" concept="4" />
+      <node id="3164946647247564142" at="41,0,42,55" concept="0" />
+      <node id="3164946647247564142" at="42,55,43,0" concept="4" />
+      <node id="3164946647247564142" at="43,0,44,37" concept="2" />
+      <node id="3164946647247564142" at="45,33,46,32" concept="0" />
+      <node id="3164946647247564142" at="44,37,47,5" concept="6" />
+      <node id="3164946647247564142" at="19,0,49,0" concept="5" trace="main#([Ljava/lang/String;)V" />
+      <scope id="3164946647247564142" at="45,33,46,32" />
+      <scope id="3164946647247564142" at="19,42,47,5">
+        <var name="employee_a" id="3632878082681996716" />
+        <var name="pos" id="3164946647247564142" />
+        <var name="scan" id="3164946647247564142" />
+        <var name="scanner" id="3164946647247564142" />
+        <var name="table_a" id="3632878082682120710" />
+        <var name="table_b" id="3632878082682120712" />
+        <var name="table_c" id="3632878082682120715" />
+      </scope>
+      <scope id="3164946647247564142" at="19,0,49,0">
+        <var name="args" id="3164946647247564142" />
+      </scope>
+      <unit id="3164946647247564142" at="13,0,18,0" name="mcgill.ecse539.pos.sandbox.POSImpl$TransactionType" />
+      <unit id="3164946647247564142" at="8,0,50,0" name="mcgill.ecse539.pos.sandbox.POSImpl" />
+    </file>
+  </root>
+</debug-info>
+
