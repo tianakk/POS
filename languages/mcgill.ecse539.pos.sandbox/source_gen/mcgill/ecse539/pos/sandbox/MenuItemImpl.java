@@ -22,4 +22,12 @@ public class MenuItemImpl {
   public int getId() {
     return id;
   }
+  public String getName() {
+    return name;
+  }
+
+  public int getPrice() {
+    return price;
+  }
+
 }

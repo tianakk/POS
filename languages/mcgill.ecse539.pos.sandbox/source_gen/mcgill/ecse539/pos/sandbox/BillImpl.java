@@ -23,4 +23,23 @@ public class BillImpl {
   public int getId() {
     return transactionId;
   }
+  public boolean getPaymentStatus() {
+    return paymentStatus;
+  }
+  public void updatePaymentStatus(boolean stat) {
+    this.paymentStatus = stat;
+  }
+  public int getPaymentAmount() {
+    return paymentAmount;
+  }
+  public Calendar getDate() {
+    return date;
+  }
+  public POSImpl.TransactionType getTranstype() {
+    return transactionType;
+  }
+  public OrderImpl getOrder() {
+    return order;
+  }
+
 }

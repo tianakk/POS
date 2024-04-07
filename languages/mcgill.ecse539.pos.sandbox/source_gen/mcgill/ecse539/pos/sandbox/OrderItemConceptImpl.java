@@ -11,4 +11,8 @@ public class OrderItemConceptImpl {
     this.quantity = quantity;
     this.menuItem = menu;
   }
+
+  public MenuItemImpl getItemName() {
+    return menuItem;
+  }
 }

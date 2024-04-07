@@ -95,6 +95,14 @@
         <property role="DFgwL" value="12" />
         <ref role="DFgw$" node="1Tq8jHM$ZAD" />
       </node>
+      <node concept="DFgIh" id="31MVHDWajU$" role="DFgJq">
+        <property role="DFgwL" value="5" />
+        <ref role="DFgw$" node="31MVHDW9JMt" />
+      </node>
+      <node concept="DFgIh" id="31MVHDWarYq" role="DFgJq">
+        <property role="DFgwL" value="7" />
+        <ref role="DFgw$" node="31MVHDW9JMt" />
+      </node>
     </node>
     <node concept="DFgIn" id="39E$PTe$uC6" role="2nsH0y">
       <property role="DFgJ9" value="12" />
@@ -104,6 +112,9 @@
     </node>
     <node concept="DFgIn" id="39E$PTe$uCb" role="2nsH0y">
       <property role="DFgJ9" value="14" />
+    </node>
+    <node concept="DFgIn" id="31MVHDW9GLd" role="2nsH0y">
+      <property role="DFgJ9" value="15" />
     </node>
     <node concept="1WYGAe" id="39E$PTe$uC2" role="1WYGAF">
       <property role="1WYGAf" value="Credit" />
@@ -115,11 +126,15 @@
       <property role="1WYGAf" value="Debit" />
     </node>
     <node concept="DFgIt" id="39E$PTe$0mG" role="2nsH0n">
-      <property role="DFgwf" value="aaa" />
+      <property role="DFgwf" value="anna" />
       <property role="DFgwd" value="11" />
     </node>
+    <node concept="DFgIt" id="31MVHDW9HLE" role="2nsH0n">
+      <property role="DFgwf" value="edward" />
+      <property role="DFgwd" value="12" />
+    </node>
     <node concept="DFgIl" id="1Tq8jHM$ZA_" role="2nsH0u">
-      <property role="DFgxK" value="ofella" />
+      <property role="DFgxK" value="nuggets" />
       <property role="DFgxX" value="12" />
       <property role="DFgxQ" value="1" />
       <node concept="1GbOPq" id="1Tq8jHM$ZAA" role="1GbOP_">
@@ -133,18 +148,26 @@
       </node>
     </node>
     <node concept="DFgIl" id="1Tq8jHM$ZAD" role="2nsH0u">
-      <property role="DFgxK" value="fritatta" />
-      <property role="DFgxX" value="22" />
-      <property role="DFgxQ" value="12" />
+      <property role="DFgxK" value="burger" />
+      <property role="DFgxX" value="15" />
+      <property role="DFgxQ" value="2" />
       <node concept="1GbOPq" id="1Tq8jHM$ZAE" role="1GbOP_">
         <ref role="1GbOPp" node="1Tq8jHMyr$a" />
       </node>
     </node>
     <node concept="DFgIl" id="GGEjQc3ux8" role="2nsH0u">
-      <property role="DFgxK" value="puls" />
-      <property role="DFgxQ" value="123" />
-      <property role="DFgxX" value="1" />
+      <property role="DFgxK" value="smoothie" />
+      <property role="DFgxQ" value="3" />
+      <property role="DFgxX" value="5" />
       <node concept="1GbOPq" id="GGEjQc3ux9" role="1GbOP_">
+        <ref role="1GbOPp" node="1Tq8jHMyr$e" />
+      </node>
+    </node>
+    <node concept="DFgIl" id="31MVHDW9JMt" role="2nsH0u">
+      <property role="DFgxK" value="fries" />
+      <property role="DFgxQ" value="4" />
+      <property role="DFgxX" value="7" />
+      <node concept="1GbOPq" id="31MVHDW9JMu" role="1GbOP_">
         <ref role="1GbOPp" node="1Tq8jHMyr$e" />
       </node>
     </node>

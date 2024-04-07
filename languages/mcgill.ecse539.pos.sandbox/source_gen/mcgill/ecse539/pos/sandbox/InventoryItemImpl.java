@@ -16,6 +16,10 @@ public class InventoryItemImpl {
     return this.quantity;
   }
 
+  public int diminishQuantity() {
+    return this.quantity - 1;
+  }
+
   public String getName() {
     return this.name;
   }

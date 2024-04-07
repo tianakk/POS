@@ -18,5 +18,11 @@ public class OrderImpl {
   public String getId() {
     return id;
   }
+  public ArrayList<OrderItemConceptImpl> getOrderItems() {
+    return this.orderItems;
+  }
+  public void setnewItemInOrder(OrderItemConceptImpl item) {
+    orderItems.add(item);
+  }
 
 }
