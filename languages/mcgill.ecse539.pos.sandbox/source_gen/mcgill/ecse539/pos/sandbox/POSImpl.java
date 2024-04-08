@@ -185,6 +185,7 @@ public class POSImpl {
       OrderItemConceptImpl oitem = iterator.next();
       if (oitem.getItemName().getId() == mid) {
         iterator.remove();
+        System.out.println("item deleted");
         break;
       }
 
@@ -239,7 +240,7 @@ public class POSImpl {
       Map.Entry<Integer, BillImpl> entry = iterator.next();
       BillImpl bill = entry.getValue();
 
-      if (bill.getOrder().getId() == oidsString) {
+      if (bill.getOrder().getId().equals(oidsString)) {
         iterator.remove();
         System.out.println("Bill with orderId " + oidsString + " deleted succesfully");
         return;
@@ -431,7 +432,7 @@ public class POSImpl {
         } else {
           wrongNumber();
         }
-      } else if (inputArr[0].equals("getTableOrder")) {
+      } else if (inputArr[0].equals("getOrderWithOrderId")) {
         if (inputArr.length == 2) {
           pos.printOrder(inputArr[1]);
         } else {
@@ -443,8 +444,10 @@ public class POSImpl {
         } else {
           wrongNumber();
         }
-      } else if (inputArr[0].equals("printallorders")) {
+      } else if (inputArr[0].equals("printallordersIds")) {
         pos.printAllOrders();
+      } else {
+        System.out.println("command doesnt match, please check spelling, and attributes");
       }
 
       scan = scanner.nextLine();
